@@ -1,1 +1,1 @@
-https://cherzooka.github.io/chara/
+https://cherzooka.github.io/murderme/
