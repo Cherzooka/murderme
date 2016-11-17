@@ -1,0 +1,29 @@
+::selection {
+	background: $accentcolor;
+}
+
+::-moz-selection {
+	background: $accentcolor;
+}
+
+::-webkit-selection {
+	background: $accentcolor;
+}
+
+#s-m-t-tooltip {
+    max-width: 300px;
+    z-index: 10;
+    margin: 24px 14px 7px 12px;
+    padding: 8px;
+    background: $backgroundcolor;
+    font-size: 12px;
+    color: $fontcolor;
+    font-family: 'Muli', sans-serif;
+    border: 2px solid $bordercolor;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
