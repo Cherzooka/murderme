@@ -5,13 +5,16 @@
   <title>Characters</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <link rel="import" id="chara-select" href="character-select.html">
+  
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise|Days+One|Muli|Droid+Sans+Mono'>
   <link id="pagestyle" rel="stylesheet" type="text/css" href="css/base.css">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/jquery.style-my-tooltips.js"></script>
+  
   <script>
     (function($){
         $(document).ready(function(){
@@ -19,6 +22,8 @@
         });
     })(jQuery);
 </script>
+
+
 </head>
 <body>
   <div id="left-side-bar">
@@ -37,7 +42,15 @@
 				<i class="fa fa-angle-double-up" aria-hidden="true"></i></span>
 		</div><div id="triangle"></div><br><br>
 		
-		<pre><!--#include virtual="character-select.html" --></pre>
+		<script>
+		var getImport = document.querySelector('#chara-select');
+		var getContent = getImport.import.querySelector('#chara-select');
+		document.body.appendChild(document.importNode(getContent, true));
+		</script>
+
+			
+		</div>
+		
 	</div>
   </div>
 </body>

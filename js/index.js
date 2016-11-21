@@ -25,6 +25,3 @@ function closeNav() {
 	$(".slide-button-close").fadeToggle("slow");
 }
 
-$(document).ready(function() {
- $('.character-select').load('character-select.html');
-});

@@ -71,9 +71,48 @@
 	display: none;
 }
 
+#character-select {
+	overflow: scroll;
+	height: 100%;
+}
+
+#character-select iframe {
+	height: 93%;
+	width: 100%;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
 .character {
-	width: 90%;
-	margin: auto;
+	width: 400px;
 	margin-top: 10px;
+	margin-bottom: 0px;
 	background-color: gray;
+	padding: 10px;
+	padding-bottom: 0;
+	text-align: left;
+	border: none;
+	border-radius: 5px;
+}
+
+.character-name {
+	font-family: 'Days One', sans-serif;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+
+.character ul {
+	display: inline-block;
+	font-family: 'Muli', sans-serif;
+	bottom: 0;
+	left: 0;
+	font-size: 12px;
+}
+
+.character li {
+	display: inline-block;
+	background-color: darkgray;
+	padding: 3px;
+	margin: 1px;
+	border-radius: 5px;
 }
