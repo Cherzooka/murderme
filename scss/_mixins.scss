@@ -14,3 +14,11 @@
   -o-user-select: $arg;
   user-select: $arg;
 }
+
+@mixin text-shadow($arg) {
+  text-shadow: 
+    -1px 0 $arg, 
+    0 1px $arg, 
+    1px 0 $arg, 
+    0 -1px $arg;
+}

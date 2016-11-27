@@ -1,0 +1,128 @@
+.template {
+  display: none;
+}
+
+.aditi b, .aditi strong {
+  color: $aditicolor;
+  @include text-shadow($lightborder)
+}
+
+.alvar b, .alvar strong {
+  color: $alvarcolor;
+  @include text-shadow($lightborder)
+}
+
+.ananta b, .ananta strong {
+  color: $anantacolor;
+  @include text-shadow($darkborder)
+}
+
+.aslan b , .aslan strong{
+  color: $aslancolor;
+  @include text-shadow($lightborder)
+}
+
+.aste b, .aste strong {
+  color: $astecolor;
+  @include text-shadow($lightborder)
+}
+
+.deryn b, .deryn strong {
+  color: $deryncolor;
+  @include text-shadow($darkborder)
+}
+
+.erinys b, .erinys strong {
+  color: $erinyscolor;
+  @include text-shadow($lightborder)
+}
+
+.felix b, .felix strong {
+  color: $felixcolor;
+  @include text-shadow($lightborder)
+}
+
+.hashur b, .hashur strong {
+  color: $hashurcolor;
+  @include text-shadow($darkborder)
+}
+
+.jayashri b, .jayashri strong {
+  color: $jayashricolor;
+  @include text-shadow($lightborder)
+}
+
+.kiran b, .kiran strong {
+  color: $kirancolor;
+  @include text-shadow($lightborder)
+}
+
+.kuliana b, .kuliana strong {
+  color: $kulianacolor;
+  @include text-shadow($lightborder)
+}
+
+.lilim b, .lilim strong {
+  color: $lilimcolor;
+  @include text-shadow($lightborder)
+}
+
+.machlah b, .machlah strong {
+  color: $machlahcolor;
+  @include text-shadow($lightborder)
+}
+
+.martina b, .martina strong {
+  color: $martinacolor;
+  @include text-shadow($lightborder)
+}
+
+.reuben b, .reuben strong {
+  color: $reubencolor;
+  @include text-shadow($lightborder)
+}
+
+.shae b, .shae strong {
+  color: $shaecolor;
+  @include text-shadow($lightborder)
+}
+
+.sheona b, .sheona strong {
+  color: $sheonacolor;
+  @include text-shadow($lightborder)
+}
+
+.siorus b, .siorus strong {
+  color: $sioruscolor;
+  @include text-shadow($lightborder)
+}
+
+.skane b, .skane strong {
+  color: $skanecolor;
+  @include text-shadow($lightborder)
+}
+
+.taiji b, .taiji strong {
+  color: $taijicolor;
+  @include text-shadow($lightborder)
+}
+
+.thanh b, .thanh strong {
+  color: $thanhcolor;
+  @include text-shadow($lightborder)
+}
+
+.xiphos b, .xiphos strong {
+  color: $xiphoscolor;
+  @include text-shadow($darkborder)
+}
+
+.yeoncho b, .yeoncho strong {
+  color: $yeonchocolor;
+  @include text-shadow($lightborder)
+}
+
+.yeonjun b, .yeonjun strong {
+  color: $yeonjuncolor;
+  @include text-shadow($lightborder)
+}

@@ -1,0 +1,83 @@
+h2 {
+  float: right;
+  margin-top: -28px;
+  margin-bottom: -30px;
+  font-size: 40px;
+  padding-left: 200px;
+  text-align: right;
+  font-family: 'Alex Brush', cursive;
+  @include text-shadow($lightborder)
+}
+
+h3 {
+    display: inline-block;
+    margin: 0;
+    margin-right: 5px;
+    margin-left: -75px;
+    padding: 0;
+    padding-right: 10px;
+    border-right: 2px solid $bordercolor;
+    font-size: 13pt;
+    font-family: 'Felipa', cursive;
+    width: 75px;
+    text-align: right;
+    @include text-shadow($lightborder)
+}
+
+.filters button {
+    display: inline-block;
+    margin-right: 4px;
+    padding: 1px 5px;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: transparent;
+    font-family: 'Muli', sans-serif;
+    color: $fontcolor;
+    text-align: left;
+    @include transition(all .3s ease-out)
+}
+
+.filters hr {
+    margin-top: 1px;
+    background-color: $lightborder;
+    border-radius: 50px;
+    width: 300px;
+    border: none;
+    height: 2px;
+    margin-left: 100px;
+}
+
+.button:active, .button.is-checked {
+    color: $accentcolor;
+    border: 2px solid transparent;
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: $accentcolor;
+    border: 2px solid $bordercolor;
+    border-radius: 5px;
+    color: $bordercolor;
+    padding: 1px 5px;
+}
+
+.button.is-checked:hover {
+    background: $accentcolor;
+    border: 2px solid $bordercolor;
+    border-radius: 5px;
+    color: #2f2b26;
+    padding: 1px 5px;
+}
+
+.button-group {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    margin-left: 80px;
+}
+
+.filters {
+  width: 400px;
+  margin: 20px;
+}

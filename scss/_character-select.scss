@@ -1,0 +1,64 @@
+.character {
+	width: 90%;
+	margin: 5px 20px;
+	background-color: $chara-select-background;
+	padding: 10px;
+	padding-bottom: 0;
+	text-align: left;
+	border: 2px solid $bordercolor;
+	border-radius: 5px;
+}
+
+.character:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.character-name {
+	font-family: 'Felipa', cursive;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.character::first-letter {
+  font-family: 'Alex Brush', cursive;
+  font-size: 40px;
+  font-weight: 900;
+  float: left;
+  margin-right: 2px;
+  margin-top: -10px;
+}
+
+.character b {
+  font-family: 'Felipa', cursive;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.character ul {
+	display: inline-block;
+	font-family: 'Muli', sans-serif;
+	bottom: 0;
+	left: 0;
+	font-size: 11px;
+	margin-top: -8px;
+}
+
+.character li {
+	display: inline-block;
+	background-color: $chara-select-tags;
+	padding: 3px 7px;
+	margin: 1px;
+	border-radius: 5px;
+}
+
+.character-select {
+	overflow: scroll;
+	height: 100%;
+}
+
+#chara-select {
+	padding-bottom: 100px;
+	overflow: scroll;
+}
