@@ -49,14 +49,14 @@ h3 {
 }
 
 .button:active, .button.is-checked {
-    color: $accentcolor;
+    color: $lightborder;
     border: 2px solid transparent;
     padding: 1px 5px;
     border-radius: 5px;
 }
 
 .button:hover {
-    background: $accentcolor;
+    background: $bar-background;
     border: 2px solid $bordercolor;
     border-radius: 5px;
     color: $bordercolor;
@@ -64,7 +64,7 @@ h3 {
 }
 
 .button.is-checked:hover {
-    background: $accentcolor;
+    background: $bar-background;
     border: 2px solid $bordercolor;
     border-radius: 5px;
     color: #2f2b26;
@@ -79,5 +79,7 @@ h3 {
 
 .filters {
   width: 400px;
-  margin: 20px;
+  margin: 0 20px;
+  margin-top: 20px;
+  overflow: hidden;
 }

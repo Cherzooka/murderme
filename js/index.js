@@ -11,8 +11,8 @@ $(document).ready(function() {
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
-    document.getElementById("right-bar-sorting-container").style.height = "350px";
-    document.getElementById("right-bar-characters").style.marginTop = "350px";
+    document.getElementById("right-bar-sorting-container").style.height = "370px";
+    document.getElementById("right-bar-characters").style.marginTop = "370px";
 	$(".slide-button-open").fadeToggle("slow");
 	$(".slide-button-close").fadeToggle("slow");
 }
