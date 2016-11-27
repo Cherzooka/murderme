@@ -117,6 +117,10 @@
   @include text-shadow($darkborder)
 }
 
+.xiphos.character::first-letter {
+  padding-left: 6px;
+}
+
 .yeoncho b, .yeoncho strong {
   color: $yeonchocolor;
   @include text-shadow($lightborder)
