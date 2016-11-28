@@ -1,0 +1,45 @@
+#bubble-music {
+    position:fixed;
+    left:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background-color:#de8110;
+    border-radius:100%;
+    -moz-border-radius:100%;
+    overflow:hidden;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out
+
+}
+
+#bubble-music:hover {
+    border-radius:9px;
+    -moz-border-radius:9px;
+    width:140px;
+    height:30px;
+}
+
+.music_embed {
+    margin:-23px 0 0 70px;
+    z-index:1;
+    font-family:consolas;
+    font-size:8px;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out
+}
+
+#bubble-music:hover .music_embed {
+    margin:-23px 0 0 34px;
+    opacity:1;
+}
+
+
+<div id="bubble-music">
+<img style="margin:7px;" src="http://68.media.tumblr.com/tumblr_m7w2py1dEP1r6o8v2.gif">
+    <div class="music_embed">
+     MUSIC PLAYER CODE GOES HERE
+    </div>
+</div>

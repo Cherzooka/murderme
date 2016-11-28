@@ -2,296 +2,594 @@
   display: none;
 }
 
+// ADITI
+
 .aditi b, .aditi strong {
   color: $aditicolor;
-  @include text-shadow($lightborder)
 }
+
+.aditi .stripe {
+  background-color: $aditicolor;
+}
+
+//ALVAR
 
 .alvar b, .alvar strong {
   color: $alvarcolor;
-  @include text-shadow($lightborder)
 }
+
+.alvar .stripe {
+  background-color: $alvarcolor;
+}
+
+//ANANTA
 
 .ananta b, .ananta strong {
   color: $anantacolor;
-  @include text-shadow($darkborder)
+  // @include text-shadow($darkborder)
 }
+
+.ananta  .stripe {
+  background-color: $anantacolor;
+}
+
+//ASLAN
 
 .aslan b , .aslan strong{
   color: $aslancolor;
-  @include text-shadow($lightborder)
 }
+
+.aslan .stripe {
+  background-color: $aslancolor;
+}
+
+//ASTE
 
 .aste b, .aste strong {
   color: $astecolor;
-  @include text-shadow($lightborder)
 }
+
+.aste .stripe {
+  background-color: $astecolor;
+}
+
+//DERYN
 
 .deryn b, .deryn strong {
   color: $deryncolor;
-  @include text-shadow($darkborder)
+  // @include text-shadow($darkborder)
 }
+
+.deryn .stripe {
+  background-color: $deryncolor;
+}
+
+//ERINYS
 
 .erinys b, .erinys strong {
   color: $erinyscolor;
-  @include text-shadow($lightborder)
 }
+
+.erinys .stripe {
+  background-color: $erinyscolor;
+}
+
+//FELIX
 
 .felix b, .felix strong {
   color: $felixcolor;
-  @include text-shadow($lightborder)
 }
+
+.felix .stripe {
+  background-color: $felixcolor
+}
+
+//HASHUR
 
 .hashur b, .hashur strong {
   color: $hashurcolor;
-  @include text-shadow($darkborder)
+  // @include text-shadow($darkborder)
 }
+
+.hashur .stripe {
+  background-color: $hashurcolor;
+}
+
+//JAYASHRI
 
 .jayashri b, .jayashri strong {
   color: $jayashricolor;
-  @include text-shadow($lightborder)
 }
+
+.jayashri .stripe {
+  background-color: $jayashricolor;
+}
+
+//KIRAN
 
 .kiran b, .kiran strong {
   color: $kirancolor;
-  @include text-shadow($lightborder)
 }
+
+.kiran .stripe {
+  background-color: $kirancolor;
+}
+
+//KULIANA
 
 .kuliana b, .kuliana strong {
   color: $kulianacolor;
-  @include text-shadow($lightborder)
 }
+
+.kuliana .stripe {
+  background-color: $kulianacolor;
+}
+
+//LILIM
 
 .lilim b, .lilim strong {
   color: $lilimcolor;
-  @include text-shadow($lightborder)
 }
+
+.lilim .stripe {
+  background-color: $lilimcolor;
+}
+
+//MACHLAH
 
 .machlah b, .machlah strong {
   color: $machlahcolor;
-  @include text-shadow($lightborder)
 }
+
+.machlah .stripe {
+  background-color: $machlahcolor;
+}
+
+//MARTINA
 
 .martina b, .martina strong {
   color: $martinacolor;
-  @include text-shadow($lightborder)
 }
+
+.martina .stripe {
+  background-color: $martinacolor;
+}
+
+//REUBEN
 
 .reuben b, .reuben strong {
   color: $reubencolor;
-  @include text-shadow($lightborder)
 }
+
+.reuben .stripe {
+  background-color: $reubencolor
+}
+
+//SHAE
 
 .shae b, .shae strong {
   color: $shaecolor;
-  @include text-shadow($lightborder)
 }
+
+.shae .stripe {
+  background-color: $shaecolor
+}
+
+//SHEONA
 
 .sheona b, .sheona strong {
   color: $sheonacolor;
-  @include text-shadow($lightborder)
 }
+
+.sheona .stripe {
+  background-color: $sheonacolor;
+}
+
+//SIORUS
 
 .siorus b, .siorus strong {
   color: $sioruscolor;
-  @include text-shadow($lightborder)
 }
+
+.siorus .stripe {
+  background-color: $sioruscolor
+}
+
+//SKANE
 
 .skane b, .skane strong {
   color: $skanecolor;
-  @include text-shadow($lightborder)
 }
+
+.skane .stripe {
+  background-color: $skanecolor
+}
+
+//TAIJI
 
 .taiji b, .taiji strong {
   color: $taijicolor;
-  @include text-shadow($lightborder)
 }
+
+.taiji .stripe {
+  background-color: $taijicolor;
+}
+
+//THANH
 
 .thanh b, .thanh strong {
   color: $thanhcolor;
-  @include text-shadow($lightborder)
 }
+
+.thanh .stripe {
+  background-color: $thanhcolor;
+}
+
+//XIPHOS
 
 .xiphos b, .xiphos strong {
   color: $xiphoscolor;
-  @include text-shadow($darkborder)
+  // @include text-shadow($darkborder)
 }
 
 .xiphos.character::first-letter {
   padding-left: 6px;
 }
 
+.xiphos .stripe {
+  background-color: $xiphoscolor
+}
+
+//YEONCHO
+
 .yeoncho b, .yeoncho strong {
   color: $yeonchocolor;
-  @include text-shadow($lightborder)
 }
+
+.yeoncho .stripe {
+  background-color: $yeonchocolor;
+}
+
+//YEONJUN
 
 .yeonjun b, .yeonjun strong {
   color: $yeonjuncolor;
-  @include text-shadow($lightborder)
 }
+
+.yeonjun .stripe {
+  background-color: $yeonjuncolor;
+}
+
+//RILEY
 
 .riley b, .riley strong {
   color: $rileycolor;
-  @include text-shadow($lightborder)
 }
+
+.riley .stripe {
+  background-color: $rileycolor;
+}
+
+//ADALIA
 
 .adalia b, .adalia strong {
   color: $adaliacolor;
-  @include text-shadow($lightborder)
 }
+
+.adalia .stripe {
+  background-color: $adaliacolor;
+}
+
+//AED
 
 .aed b, .aed strong {
   color: $aedcolor;
-  @include text-shadow($lightborder)
 }
+
+.aed .stripe {
+  background-color: $aedcolor;
+}
+
+//ALEX
 
 .alex b, .alex strong {
   color: $alexcolor;
-  @include text-shadow($lightborder)
 }
+
+.alex .stripe {
+  background-color: $alexcolor;
+}
+
+//ARTAVUS
 
 .artavus b, .artavus strong {
   color: $artavuscolor;
-  @include text-shadow($lightborder)
 }
+
+.artavus .stripe {
+  background-color: $artavuscolor;
+}
+
+//ASHER
 
 .asher b, .asher strong {
   color: $ashercolor;
-  @include text-shadow($lightborder)
 }
+
+.asher .stripe {
+  background-color: $ashercolor;
+}
+
+//AUGUST
 
 .august b, .august strong {
   color: $augustcolor;
-  @include text-shadow($lightborder)
 }
+
+.august .stripe {
+  background-color: $augustcolor;
+}
+
+//BAST
 
 .bast b, .bast strong {
   color: $bastcolor;
-  @include text-shadow($lightborder)
 }
+
+.bast .stripe {
+  background-color: $bastcolor;
+}
+
+//MOROI
 
 .moroi b, .moroi strong {
   color: $moroicolor;
-  @include text-shadow($lightborder)
 }
+
+.moroi .stripe {
+  background-color: $moroicolor;
+}
+
+//EKATERINA
 
 .ekat b, .ekat strong {
   color: $ekatcolor;
-  @include text-shadow($lightborder)
 }
+
+.ekat .stripe {
+  background-color: $ekatcolor;
+}
+
+//ELIAS
 
 .elias b, .elias strong {
   color: $eliascolor;
-  @include text-shadow($lightborder)
 }
+
+.elias .stripe {
+  background-color: $eliascolor;
+}
+
+//ERISH
 
 .erish b, .erish strong {
   color: $erishcolor;
-  @include text-shadow($lightborder)
 }
+
+.erish .stripe {
+  background-color: $erishcolor;
+}
+
+//FREYA
 
 .freya b, .freya strong {
   color: $freyacolor;
-  @include text-shadow($lightborder)
 }
+
+.freya .stripe {
+  background-color: $freyacolor;
+}
+
+//INES
 
 .ines b, .ines strong {
   color: $inescolor;
-  @include text-shadow($lightborder)
 }
+
+.ines .stripe {
+  background-color: $inescolor;
+}
+
+//KALIS
 
 .kalis b, .kalis strong {
   color: $kaliscolor;
-  @include text-shadow($lightborder)
 }
+
+.kalis .stripe {
+  background-color: $kaliscolor;
+}
+
+//LEO
 
 .leo b, .leo strong {
   color: $leocolor;
-  @include text-shadow($lightborder)
 }
+
+.leo .stripe {
+  background-color: $leocolor;
+}
+
+//MAKS
 
 .maks b, .maks strong {
   color: $makscolor;
-  @include text-shadow($lightborder)
 }
+
+.maks .stripe {
+  background-color: $makscolor;
+}
+
+//NICO
 
 .nico b, .nico strong {
   color: $nicocolor;
-  @include text-shadow($lightborder)
 }
+
+.nico .stripe {
+  background-color: $nicocolor;
+}
+
+//NOAH
 
 .noah b, .noah strong {
   color: $noahcolor;
-  @include text-shadow($lightborder)
 }
+
+.noah .stripe {
+  background-color: $noahcolor;
+}
+
+//OLIVIA
 
 .olivia b, .olivia strong {
   color: $oliviacolor;
-  @include text-shadow($lightborder)
 }
+
+.olivia .stripe {
+  background-color: $oliviacolor;
+}
+
+//SIMON
 
 .simon b, .simon strong {
   color: $simoncolor;
-  @include text-shadow($lightborder)
 }
+
+.simon .stripe {
+  background-color: $simoncolor;
+}
+
+//TOBY
 
 .toby b, .toby strong {
   color: $tobycolor;
-  @include text-shadow($lightborder)
 }
+
+.toby .stripe {
+  background-color: $tobycolor;
+}
+
+//OZ
 
 .oz b, .oz strong {
   color: $ozcolor;
-  @include text-shadow($lightborder)
 }
+
+.oz .stripe {
+  background-color: $ozcolor;
+}
+
+//FLYNN
 
 .flynn b, .flynn strong {
   color: $flynncolor;
-  @include text-shadow($lightborder)
 }
+
+.flynn .stripe {
+  background-color: $flynncolor;
+}
+
+//JUDE
 
 .jude b, .jude strong {
   color: $judecolor;
-  @include text-shadow($lightborder)
 }
+
+.jude .stripe {
+  background-color: $judecolor;
+}
+
+//AZZA
 
 .azza b, .azza strong {
   color: $azzacolor;
-  @include text-shadow($lightborder)
 }
+
+.azza .stripe {
+  background-color: $azzacolor;
+}
+
+//EVREN
 
 .evren b, .evren strong {
   color: $evrencolor;
-  @include text-shadow($lightborder)
 }
+
+.evren .stripe {
+  background-color: $evrencolor;
+}
+
+//ISRAA
 
 .israa b, .israa strong {
   color: $israacolor;
-  @include text-shadow($lightborder)
 }
+
+.israa .stripe {
+  background-color: $israacolor;
+}
+
+//THREN
 
 .thren b, .thren strong {
   color: $threncolor;
-  @include text-shadow($lightborder)
 }
+
+.thren .stripe {
+  background-color: $threncolor;
+}
+
+//GRESH
 
 .gresh b, .gresh strong {
   color: $greshcolor;
-  @include text-shadow($lightborder)
 }
+
+.gresh .stripe {
+  background-color: $greshcolor;
+}
+
+//CALANTHE
 
 .calanthe b, .calanthe strong {
   color: $calanthecolor;
-  @include text-shadow($lightborder)
 }
+
+.calanthe .stripe {
+  background-color: $calanthecolor;
+}
+
+//LEVENT
 
 .levent b, .levent strong {
   color: $leventcolor;
-  @include text-shadow($lightborder)
 }
+
+.levent .stripe {
+  background-color: $leventcolor;
+}
+
+.levent ul{
+  margin-top: 7px;
+}
+
+//ORHAN
 
 .orhan b, .orhan strong {
   color: $orhancolor;
-  @include text-shadow($lightborder)
+}
+
+.orhan .stripe {
+  background-color: $orhancolor;
 }

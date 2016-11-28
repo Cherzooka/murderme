@@ -1,0 +1,108 @@
+/* CIRCLE DOT-MENU */
+
+.circle_menu {
+		display:inline-block;
+		background-color:#333;
+		width:60px;
+		height:60px;
+		margin:0 0 0 20px;
+		border-radius:100%;
+		-moz-border-radius:100%;
+		border:5px solid #fff;
+		-webkit-transition: all 0.7s ease;
+		-moz-transition: all 0.7s ease;
+		-o-transition: all 0.7s ease;
+
+}
+
+
+.circle_menu:hover {
+		background-color:#111;
+		border:5px solid #545454;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+}
+
+.circle_menu:hover:before {
+		opacity:1;
+		transform:scale(0.5) rotate(0deg);
+		-moz-transform:scale(0.5) rotate(0deg);
+		-webkit-transform:scale(0.5) rotate(0deg);
+		-webkit-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+}
+
+.circle_menu span {
+		position:absolute;
+		margin:22px 0 0 22px;
+		width:15px;
+		height:15px;
+		color:transparent;
+		background-color:white;
+		border-radius:100%;
+		-moz-border-radius:100%;
+		opacity:0;
+		transform:scale(1.5) rotate(0deg);
+		-moz-transform:scale(1.5) rotate(0deg);
+		-webkit-transform:scale(1.5) rotate(0deg);
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+}
+
+
+.circle_menu:hover span {
+		transform:scale(0.6) rotate(0deg);
+		-moz-transform:scale(0.6) rotate(0deg);
+		-webkit-transform:scale(0.6) rotate(0deg);
+		width:15px;
+		height:15px;
+		background-color:white;
+		border-radius:100%;
+		-moz-border-radius:100%;
+		font-size:0px;
+		color:transparent;
+		margin:22px 0 0 22px;
+		opacity:1;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+}
+
+.circle_menu a { text-decoration:none;}
+
+.circle_menu:before {
+		opacity:0;
+		position:absolute;
+		display:block;
+		content:'';
+		width:70px;
+		height:70px;
+		border:10px solid #419ecc;
+		border-radius:100%;
+		-moz-border-radius:100%;
+		margin:-15px 0 0 -15px;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+}
+
+.circle_menu:after {
+		display:block;
+		content:'';
+		width:15px;
+		height:15px;
+		background-color:#419ecc;
+		border-radius:100%;
+		-moz-border-radius:100%;
+		margin:22px 0 0 22px;
+}
+
+<div id="menu_container">
+   <a href="#" class="circle_menu"><span>1</span></a>
+   <a href="#" class="circle_menu"><span>2</span></a>
+   <a href="#" class="circle_menu"><span>3</span></a>
+   <a href="#" class="circle_menu"><span>4</span></a>
+</div>

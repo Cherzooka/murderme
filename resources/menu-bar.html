@@ -1,0 +1,117 @@
+#position-menu-bar {
+    position:fixed;
+    right:20px;
+    top:20px;
+    z-index:99999999;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+}
+
+
+.menu-bar {
+    display:block;
+    width:60px;
+    height:60px;
+    background-color:#333;
+    padding-left:7px;
+    padding-right:7px;
+    color:#FFF;
+    cursor:crosshair;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.menu-bar img {
+    width:50px;
+    height:50px;
+    margin-top:6px;
+    margin-left:5px;
+    }
+
+.mb {
+    display:block;
+    width:220px;
+    height:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    color:#FFF;
+    cursor:help;
+    background-color:#444;
+    margin-bottom:5px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.mb:hover {
+    background-color:#333;
+    color:#FFF;    
+    letter-spacing:5px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+#more-bar {
+    display:block;
+    opacity:0;
+    position:absolute;
+    padding:12px;
+    margin-top:50px;
+    margin-left:140px;
+    width:220px;
+    height:265px;
+    text-align:center;
+    background-color:#333;
+    color:white;
+    font-family:Courier new, monospace;
+    font-size:15px;
+    text-transform:uppercase;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+}
+
+.mb:first-letter {
+    color:#7DCED4;
+    font-style:italic;
+    font-family:Georgia;
+    font-size:22px;
+}
+
+
+#position-menu-bar:hover #more-bar {
+    margin-left:-140px;
+    opacity:1;
+}
+
+#triangle {
+    width:0;
+    height:0;
+    border-top:42px solid #333;
+    border-right:42px solid transparent;
+    position:absolute;
+    margin-top:-28px;
+    margin-left:145px;
+    opacity:1;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform: rotate(45deg);
+    } 
+    
+<div id="position-menu-bar">
+    <div class="menu-bar">
+    <img src="http://static.tumblr.com/5ojoydj/bunmo0ev7/fukuo-line-bar.png"/>
+    </div>
+        <div id="more-bar">
+            <div id="triangle"></div>
+            <a href="http://" class="mb">Custom Link Name</a>
+            <a href="http://" class="mb">Custom Link Name</a>
+            <a href="http://" class="mb">Custom Link Name</a>
+            <a href="http://" class="mb">Custom Link Name</a>
+            <a href="http://" class="mb">Custom Link Name</a>
+            <a href="http://" class="mb">Custom Link Name</a>
+        </div>
+</div>

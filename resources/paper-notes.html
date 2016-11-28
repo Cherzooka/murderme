@@ -1,0 +1,95 @@
+<!--yukoki sticky note scripts-->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script>
+$(function() {
+$( "#stickynote1" ).draggable({ handle: "div.dragstickynote1" });
+$(".closestickynote1").click(function(){$("#stickynote1").fadeOut();});
+$( "#stickynote2" ).draggable({ handle: "div.dragstickynote2" });
+$(".closestickynote2").click(function(){$("#stickynote2").fadeOut();});
+});
+</script>
+<!--yukoki sticky note scripts end-->
+
+#stickynote1 {
+    width: 180px;
+    margin-bottom: 20px;
+    position: fixed;
+    z-index: 100000000000;
+    top: 30px; /** position from top of screen **/
+    left: 30px; /** position from left of screen **/
+}
+
+#stickynote1 {
+    width: 180px; /** width of your sticky note **/
+    background-color: rgba(165,216,216,0.7); /** background colour **/
+}
+
+#stickynote2 {
+    top: 30px;
+    left: 250px;
+    width: 220px; /** width of your sticky note **/
+    background-color: rgba(255,178,178,0.7); /** background colour **/
+}
+
+.dragstickynote1 {
+    font-family: consolas;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.closestickynote1 {
+    cursor: pointer;
+    margin-left: 148px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-family: arial;
+    font-size: 10px;
+    position: absolute;
+    text-align: center;
+    float: right;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.stickynotecontent {
+    padding: 10px;
+    font-family: consolas;
+    font-size: 10px;
+}
+
+.stickynotecontent b,strong {
+    color: #000000; /** colour of bolded text **/
+}
+
+.stickynotecontent i,em {
+    color: #666666; /** colour of italic text **/
+}
+
+.stickynotecontent a {
+    text-decoration: underline;
+    color: #666666; /** colour of linked text **/
+}
+
+.stickynotecontent a:hover {
+    color: #aaaaaa; /** colour of hovered linked text **/
+}
+
+<div id="stickynote1">
+<div class="closestickynote1">X</div>
+<div class="dragstickynote1">> sticky note 1</div>
+<div class="stickynotecontent">
+Type what you want to put in your sticky note here.
+</div>
+</div><!--stickynote1 end-->
+
+<div id="stickynote2">
+<div class="closestickynote2">X</div>
+<div class="dragstickynote2">> sticky note 2</div>
+<div class="stickynotecontent">❀◕ ‿ ◕❀</div>
+</div><!--stickynote2 end-->

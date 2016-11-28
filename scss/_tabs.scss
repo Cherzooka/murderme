@@ -1,18 +1,22 @@
 
-.tabs-menu-mover {
-  width: 75%;
-  max-width: 1000px;
-  background-color: black;
-  left: 4%;
-  position: relative;
-  display: inline-block;
-}
-
 .tabs-menu {
   clear: both;
   display: inline-block;
   position: relative;
-  top: 150px;
+  float: left;
+  list-style: none;
+}
+
+.tabs-menu:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.tabs-menu li {
+          margin: 0px 5px -16px 5px;
+        float: left;
+        list-style: none;
 }
 
 .tabs-menu li a {
@@ -32,14 +36,9 @@
   @include transition(linear .3s)
 }
 
-.tabs-menu li a:hover {
-  width: 180px;
-}
-
 .tabs-menu .current a {
   color: $fontcolor;
   background-color: $bordercolor;
-  width: 180px;
 }
 
 .tab {

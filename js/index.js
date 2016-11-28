@@ -24,3 +24,9 @@ function closeNav() {
 	$(".slide-button-open").fadeToggle("slow");
 	$(".slide-button-close").fadeToggle("slow");
 }
+
+(function($){
+  $(document).ready(function(){
+    $("[title]").style_my_tooltips();
+  });
+})(jQuery);
