@@ -1,29 +1,3 @@
-h2 {
-  float: right;
-  margin-top: -28px;
-  margin-bottom: -30px;
-  font-size: 40px;
-  padding-left: 200px;
-  text-align: right;
-  font-family: 'Alex Brush', cursive;
-  @include text-shadow($bordercolor)
-}
-
-h3 {
-    display: inline-block;
-    margin: 0;
-    margin-right: 5px;
-    margin-left: -75px;
-    padding: 0;
-    padding-right: 10px;
-    border-right: 2px solid $bordercolor;
-    font-size: 13pt;
-    font-family: 'Felipa', cursive;
-    width: 75px;
-    text-align: right;
-    @include text-shadow($bordercolor)
-}
-
 .filters button {
     display: inline-block;
     margin-right: 4px;

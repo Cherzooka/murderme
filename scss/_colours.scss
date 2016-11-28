@@ -1,25 +1,24 @@
 // GENERAL
 
-$backgroundcolor: #ffffff;
+$color1: #ffffff;
+$color2: #e4dddc;
+$color3: #efebea;
+$color4: #cccccc;
+$color5: #bbbbbb;
+$color6: #aaaaaa;
+$color7: #4f4f4f;
+
+$backgroundcolor: $color2;
 $fontcolor: #666666;
 $accentcolor: #be9a18;
+$bar-background: $color5;
+$bordercolor: $color1;
+$sorting-container: $color6;
+$chara-select-background: $color6;
+$chara-select-tags: $color2;
 
-$bar-background: #cccccc;
-$bordercolor: #efebea;
-$sorting-container: #aaaaaa;
 
-$chara-select-background: #aaaaaa;
-$chara-select-tags: #efebea;
-
-/* 
-  #ffffff
-  #e4dddc
-  #efebea
-  #cccccc
-  #bbbbbb
-  #aaaaaa
-  #4f4f4f
-*/
+// CHARACTER COLORS
 
 $aditicolor: #732A25;
 $alvarcolor: #6748A8;
@@ -48,7 +47,8 @@ $evrencolor: #5040b1;
 $calanthecolor: #de87ba;
 $leventcolor: #24ad95;
 
-/* still needs to be set */
+//  still needs to be set
+
 $yeonchocolor: #000000;
 $sheonacolor: #000000;
 $jayashricolor: #000000;

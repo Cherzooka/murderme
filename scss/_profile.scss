@@ -1,8 +1,85 @@
-.profile-view-port {
-  margin-left: 50px;
-  margin-right: 450px;
+
+.character-header {
+  font-size: 50px;
+  font-family: 'Alex Brush', cursive;
+  letter-spacing: 2px;
+  position: fixed;
+  top: 20px;
+  margin-left: 25px;
 }
 
-body {
-  overflow: hidden;
+.character-header::first-letter {
+  font-size: 90px;
+  font-weight: 900;
+  float: left;
+  margin-right: -2px;
+  margin-top: -20px;
+}
+
+.info {
+  text-align: right;
+  list-style: none;
+  display: inline-block;
+}
+
+.info li {
+  border-top: 2px solid $bordercolor;
+  border-radius: 50px;
+  display: inline-block;
+  min-width: 25%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.info hr {
+    margin-top: 1px;
+    background-color: $bordercolor;
+    border: none;
+    position: absolute;
+    height: 2px;
+    margin-top: 5px;
+    z-index: -1;
+}
+
+.info b {
+  font-size: 20px;
+  float: left;
+  padding-right: 50px;
+  @include text-shadow($bordercolor)
+}
+
+.tag-block ul {
+  display: inline-block;
+	font-family: 'Muli', sans-serif;
+	bottom: 0;
+	left: 0;
+	font-size: 12px;
+	margin-top: -8px;
+	margin-right: 20px;
+	margin-left: -20px;
+	z-index: 2;
+	vertical-align:middle;
+}
+
+.tag-block li {
+  display: inline-block;
+	background-color: $chara-select-tags;
+	padding: 3px 7px;
+	margin: 1px;
+	border-radius: 5px;
+	z-index: 2;
+	border: 2px solid $bordercolor;
+}
+
+.tag-block hr {
+    margin-top: 1px;
+    background-color: $bordercolor;
+    border-radius: 50px;
+    border: none;
+    height: 2px;
+}
+
+.intro-blurb {
+  float: right;
+  width: 40%;
 }

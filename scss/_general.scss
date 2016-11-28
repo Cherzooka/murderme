@@ -1,3 +1,4 @@
+/* 
 ::selection {
 	background: $accentcolor;
 }
@@ -9,6 +10,7 @@
 ::-webkit-selection {
 	background: $accentcolor;
 }
+*/
 
 #s-m-t-tooltip {
     max-width: 300px;
@@ -38,6 +40,21 @@
   background: transparent;
 }
 
+body {
+  background-color: $backgroundcolor;
+}
+
+b {
+  font-family: 'Felipa', cursive;
+  font-size: 16px;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+strong {
+  @include text-shadow2($bordercolor)
+}
+
 #loading {
     position: fixed;
     left: 0px;
@@ -47,4 +64,30 @@
     z-index: 99999999;
     background: url('http://i.giphy.com/xTk9ZvMnbIiIew7IpW.gif') 50% 50% no-repeat #e5eff1;
     background-size:350px;
+}
+
+h2 {
+  float: right;
+  margin-top: -28px;
+  margin-bottom: -30px;
+  font-size: 40px;
+  padding-left: 200px;
+  text-align: right;
+  font-family: 'Alex Brush', cursive;
+  @include text-shadow($bordercolor)
+}
+
+h3 {
+    display: inline-block;
+    margin: 0;
+    margin-right: 5px;
+    margin-left: -75px;
+    padding: 0;
+    padding-right: 10px;
+    border-right: 2px solid $bordercolor;
+    font-size: 13pt;
+    font-family: 'Felipa', cursive;
+    width: 75px;
+    text-align: right;
+    @include text-shadow($bordercolor)
 }
