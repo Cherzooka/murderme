@@ -74,7 +74,7 @@ function concatValues( obj ) {
 <body>
   <div id="loading"> </div>
   
-  <div id="profile" class="profile-view-port"> </div>
+  <div class="profile-view-port"> </div>
   
   <div id="left-side-bar"> </div>
   
@@ -166,11 +166,21 @@ function concatValues( obj ) {
 		<div class="character-select"> </div>
 		
 		  <script>
-		  var link = document.querySelector('link[rel="import"]');
-      var post = link.import.querySelector('#chara-select');
-      var container = document.querySelector('.character-select');
-      container.appendChild(post.cloneNode(true));
-		  </script>
+		  var select = document.getElementById('chara-select');
+      var chara = select.import.querySelector('#chara-select');
+      var characont = document.querySelector('.character-select');
+      characont.appendChild(chara.cloneNode(true));
+      
+      var imports = document.getElementById('profile-block');
+      var profiles = imports.import.querySelector('#block');
+      var header = document.querySelector('head');
+      header.appendChild(profiles.cloneNode(true));
+      
+      var view = document.getElementById('template-profile');
+      var profile = view.import.querySelector('#profile');
+      var profileview = document.querySelector('.profile-view-port');
+      profileview.appendChild(profile.cloneNode(true));
+	    </script>
 		
 		</div>
 		
