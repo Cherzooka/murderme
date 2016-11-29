@@ -457,7 +457,7 @@ function callLilim() {
   $(".profile-view-port").html("").fadeOut(500);
   $("#profile-loading").fadeIn(500);
   setTimeout(function(){
-    var view = document.getElementById('aditi-profile');
+    var view = document.getElementById('lilim-profile');
     var profile = view.import.querySelector('#profile');
     var profileview = document.querySelector('.profile-view-port');
     profileview.appendChild(profile.cloneNode(true));
@@ -470,7 +470,7 @@ function callMachlah() {
   $(".profile-view-port").html("").fadeOut(500);
   $("#profile-loading").fadeIn(500);
   setTimeout(function(){
-    var view = document.getElementById('aditi-profile');
+    var view = document.getElementById('machlah-profile');
     var profile = view.import.querySelector('#profile');
     var profileview = document.querySelector('.profile-view-port');
     profileview.appendChild(profile.cloneNode(true));
