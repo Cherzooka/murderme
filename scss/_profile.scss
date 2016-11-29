@@ -6,6 +6,7 @@
   position: fixed;
   top: 20px;
   margin-left: 25px;
+  @include user-select(none)
 }
 
 .character-header::first-letter {
@@ -17,18 +18,21 @@
 }
 
 .info {
-  text-align: right;
+  text-align: left;
   list-style: none;
   display: inline-block;
+  float: left;
+	width: 45%;
 }
 
 .info li {
   border-top: 2px solid $bordercolor;
   border-radius: 50px;
   display: inline-block;
-  min-width: 25%;
-  padding: 5px;
+  padding: 5px 10px;
   margin: 5px;
+  width: 95%;
+  text-align: right;
 }
 
 .info hr {
@@ -45,7 +49,6 @@
   font-size: 20px;
   float: left;
   padding-right: 50px;
-  @include text-shadow($bordercolor)
 }
 
 .tag-block ul {
@@ -55,10 +58,9 @@
 	left: 0;
 	font-size: 12px;
 	margin-top: -8px;
-	margin-right: 20px;
-	margin-left: -20px;
 	z-index: 2;
 	vertical-align:middle;
+	@include user-select(none)
 }
 
 .tag-block li {
@@ -74,12 +76,29 @@
 .tag-block hr {
     margin-top: 1px;
     background-color: $bordercolor;
-    border-radius: 50px;
+    border-radius: 40px;
     border: none;
     height: 2px;
 }
 
+.intro {
+  float: right;
+  right: 0;
+  margin-right: 100px;
+  font-family: 'Alex Brush', cursive;
+  letter-spacing: 2px;
+  font-size: 50px;
+  @include user-select(none)
+}
+
 .intro-blurb {
   float: right;
-  width: 40%;
+  width: 45%;
+  padding-top: 35px;
+  margin-right: -275px;
+}
+
+.color {
+  border: none;
+  @include text-shadow(transparent)
 }
