@@ -84,18 +84,22 @@
 .intro {
   float: right;
   right: 0;
-  margin-right: 100px;
+  right: 100px;
   font-family: 'Alex Brush', cursive;
   letter-spacing: 2px;
   font-size: 50px;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: absolute;
   @include user-select(none)
 }
 
 .intro-blurb {
   float: right;
   width: 45%;
-  padding-top: 35px;
-  margin-right: -275px;
+  margin-top: 50px;
+  margin-right: 10px;
+  display: inline-block;
 }
 
 .color {

@@ -92,3 +92,10 @@ h3 {
     text-align: right;
     @include text-shadow($bordercolor)
 }
+
+.test-button {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  background-color: red;
+}

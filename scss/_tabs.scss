@@ -27,6 +27,7 @@
   font-family: 'Muli', sans-serif;
   font-size: 15px;
   padding-right: 20px;
+  padding-left: 30px;
   text-decoration: none;
   text-align: right;
   display: inline-block;
@@ -35,7 +36,6 @@
   border: 2px solid $bordercolor;
   border-bottom: 0;
   border-radius: 10px 10px 0 0;
-  width: 150px;
   @include user-select(none)
   @include transition(linear .3s)
 }
