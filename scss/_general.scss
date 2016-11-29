@@ -67,6 +67,17 @@ strong {
     background-size:350px;
 }
 
+#profile-loading {
+  display: none;
+  position: fixed;
+  background-image: url("img/spin.gif");
+  z-index: 9999;
+  left: 40%;
+  top: 40%;
+  height: 100px;
+  width: 100px;
+}
+
 h2 {
   float: right;
   margin-top: -28px;
