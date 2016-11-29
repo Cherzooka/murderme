@@ -39,8 +39,7 @@
 	left: 0;
 	font-size: 12px;
 	margin-top: -8px;
-	margin-right: 20px;
-	margin-left: -20px;
+	margin-left: -10px;
 	z-index: 2;
 	vertical-align:middle;
 }
@@ -51,6 +50,7 @@
 	padding: 3px 7px;
 	margin: 1px;
 	border-radius: 5px;
+	max-width: 280px;
 	z-index: 2;
 	border: 2px solid $chara-select-background;
 }

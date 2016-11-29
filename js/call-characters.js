@@ -288,7 +288,7 @@ function callFelix() {
   $(".profile-view-port").html("").fadeOut(500);
   $("#profile-loading").fadeIn(500);
   setTimeout(function(){
-    var view = document.getElementById('Felix-profile');
+    var view = document.getElementById('felix-profile');
     var profile = view.import.querySelector('#profile');
     var profileview = document.querySelector('.profile-view-port');
     profileview.appendChild(profile.cloneNode(true));
@@ -379,7 +379,7 @@ function callJude() {
   $(".profile-view-port").html("").fadeOut(500);
   $("#profile-loading").fadeIn(500);
   setTimeout(function(){
-    var view = document.getElementById('Jude-profile');
+    var view = document.getElementById('jude-profile');
     var profile = view.import.querySelector('#profile');
     var profileview = document.querySelector('.profile-view-port');
     profileview.appendChild(profile.cloneNode(true));
@@ -626,7 +626,7 @@ function callSheona() {
   $(".profile-view-port").html("").fadeOut(500);
   $("#profile-loading").fadeIn(500);
   setTimeout(function(){
-    var view = document.getElementById('Sheona-profile');
+    var view = document.getElementById('sheona-profile');
     var profile = view.import.querySelector('#profile');
     var profileview = document.querySelector('.profile-view-port');
     profileview.appendChild(profile.cloneNode(true));
@@ -713,7 +713,7 @@ function callToby() {
   $(".profile-view-port").delay(1000).fadeIn(500);
 }
 
-function calltaiji() {
+function callTaiji() {
   $(".profile-view-port").html("").fadeOut(500);
   $("#profile-loading").fadeIn(500);
   setTimeout(function(){
