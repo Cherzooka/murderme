@@ -1,18 +1,5 @@
 <div id="profile" class="adalia">  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-<script>
-$(document).ready(function() {
-  $(".tabs-menu a").click(function(event) {
-    event.preventDefault();
-    $(this).parent().addClass("current");
-    $(this).parent().siblings().removeClass("current");
-    var tab = $(this).attr("href");
-    $(".tab-content").not(tab).css("display", "none");
-    $(tab).fadeIn();
-  });
-});
-</script>
 
   <strong class="character-header"> Character Name </strong>
 

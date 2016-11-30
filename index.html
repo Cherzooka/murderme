@@ -21,8 +21,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js"></script>
 
   <script type="text/javascript">
-    $(document).ready( function() {
-    // init Isotope
+    $(document).ready(function() {
+      // init Isotope
       var $grid = $('div#chara-select').isotope({
         itemSelector: '.character',
         layoutMode: 'masonry',
@@ -34,141 +34,146 @@
           name: '.character-name'
         }
       });
- 
-    // store filter for each group
-    var filters = {};
 
-    $('.filters').on( 'click', '.button', function() {
-      var $this = $(this);
-      // get group key
-      var $buttonGroup = $this.parents('.button-group');
-      var filterGroup = $buttonGroup.attr('data-filter-group');
-      // set filter for group
-      filters[ filterGroup ] = $this.attr('data-filter');
-      // combine filters
-      var filterValue = concatValues( filters );
-      // set filter for Isotope
-      $grid.isotope({ filter: filterValue });
-    });
+      // store filter for each group
+      var filters = {};
 
-    // change is-checked class on buttons
-    $('.button-group').each( function( i, buttonGroup ) {
-      var $buttonGroup = $( buttonGroup );
-      $buttonGroup.on( 'click', 'button', function() {
-        $buttonGroup.find('.is-checked').removeClass('is-checked');
-        $( this ).addClass('is-checked');
+      $('.filters').on('click', '.button', function() {
+        var $this = $(this);
+        // get group key
+        var $buttonGroup = $this.parents('.button-group');
+        var filterGroup = $buttonGroup.attr('data-filter-group');
+        // set filter for group
+        filters[filterGroup] = $this.attr('data-filter');
+        // combine filters
+        var filterValue = concatValues(filters);
+        // set filter for Isotope
+        $grid.isotope({
+          filter: filterValue
+        });
+      });
+
+      // change is-checked class on buttons
+      $('.button-group').each(function(i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $(this).addClass('is-checked');
+        });
       });
     });
-  });
 
-// flatten object by concatting values
-function concatValues( obj ) {
- var value = '';
- for ( var prop in obj ) {
-   value += obj[ prop ];
- }
- return value;
-}
+    // flatten object by concatting values
+    function concatValues(obj) {
+      var value = '';
+      for (var prop in obj) {
+        value += obj[prop];
+      }
+      return value;
+    }
 </script>
 
 </head>
 <body>
   <!-- <div id="loading"> </div> -->
-  
   <div id="profile-loading"> </div>
-  
+
   <div class="profile-view-port"> </div>
-  
-  <div id="left-side-bar"> </span> <span class="test-button" onclick="callTemplate()"> </span></div>
-  
+
+  <div id="left-side-bar">
+    <span class="test-button" onclick="callTemplate()"> </span></div>
+
   <div id="right-side-bar">
-	<div id="right-bar-sorting-container">
-	  <div class="filters">
-	    <div class="button-group" data-filter-group="period">
-        <h3>Setting</h3>
-        <button class="button is-checked" data-filter="">ALL</button>
-          |
-        <button class="button" data-filter=".ancient-history">Ancient History</button>
-        <button class="button" data-filter=".classical-antiquity">Classic Antiquity</button>
-        <button class="button" data-filter=".middle-ages">Middle Ages</button>
-        <button class="button" data-filter=".modern-era">Modern Era</button>
-        <button class="button" data-filter=".near-future">Near Future</button>
-        <button class="button" data-filter=".far-future">Far Future</button>
-      </div>
-      
-      <div class="button-group" data-filter-group="player">
-        <h3>Player</h3>
-        <button class="button is-checked" data-filter="">ALL</button>
-          |
-        <button class="button" data-filter=".cher">Cher</button>
-        <button class="button" data-filter=".gizmo">Gizmo</button>
-        <button class="button" data-filter=".mystery">Mystery</button>
-      </div>
-      
-      <div class="button-group" data-filter-group="gender">
-        <h3>Gender</h3>
-        <button class="button is-checked" data-filter="">ALL</button>
-          |
-        <button class="button" data-filter=".male">Male</button>
-        <button class="button" data-filter=".female">Female</button>
-        <button class="button" data-filter=".other">Other</button>
-      </div>
-      
-      <div class="button-group" data-filter-group="species1">
-        <h3>Species</h3>
-        <button class="button is-checked" data-filter="">ALL</button>
-          |
-        <button class="button" data-filter=".human">Human</button>
-        <button class="button" data-filter=".magical-creature">Magical Creature</button>
-        <button class="button" data-filter=".angel">Angel</button>
-        <button class="button" data-filter=".demon">Demon</button>
-        <button class="button" data-filter=".undead">Undead</button>
-      </div>
-      
-      <div class="button-group" data-filter-group="species2">
-        <h3>Sub-Species</h3>
-        <button class="button is-checked" data-filter="">ALL</button>
-          | 
-        <button class="button" data-filter=".mundane">Mundane</button>
-        <button class="button" data-filter=".witch">Witch</button>
-        <button class="button" data-filter=".witchblood">Witchblood</button>
+    <div id="right-bar-sorting-container">
+      <div class="filters">
+        <div class="button-group" data-filter-group="period">
+          <h3>Setting</h3>
+          <button class="button is-checked" data-filter="">ALL</button> |
+          <button class="button" data-filter=".ancient-history">Ancient History</button>
+          <button class="button" data-filter=".classical-antiquity">Classic Antiquity</button>
+          <button class="button" data-filter=".middle-ages">Middle Ages</button>
+          <button class="button" data-filter=".modern-era">Modern Era</button>
+          <button class="button" data-filter=".near-future">Near Future</button>
+          <button class="button" data-filter=".far-future">Far Future</button>
+        </div>
+
+        <div class="button-group" data-filter-group="player">
+          <h3>Player</h3>
+          <button class="button is-checked" data-filter="">ALL</button> |
+          <button class="button" data-filter=".cher">Cher</button>
+          <button class="button" data-filter=".gizmo">Gizmo</button>
+          <button class="button" data-filter=".mystery">Mystery</button>
+        </div>
+
+        <div class="button-group" data-filter-group="gender">
+          <h3>Gender</h3>
+          <button class="button is-checked" data-filter="">ALL</button> |
+          <button class="button" data-filter=".male">Male</button>
+          <button class="button" data-filter=".female">Female</button>
+          <button class="button" data-filter=".other">Other</button>
+        </div>
+
+        <div class="button-group" data-filter-group="species1">
+          <h3>Species</h3>
+          <button class="button is-checked" data-filter="">ALL</button> |
+          <button class="button" data-filter=".human">Human</button>
+          <button class="button" data-filter=".magical-creature">Magical Creature</button>
+          <button class="button" data-filter=".angel">Angel</button>
+          <button class="button" data-filter=".demon">Demon</button>
+          <button class="button" data-filter=".undead">Undead</button>
+        </div>
+
+        <div class="button-group" data-filter-group="species2">
+          <h3>Sub-Species</h3>
+          <button class="button is-checked" data-filter="">ALL</button> |
+          <button class="button" data-filter=".mundane">Mundane</button>
+          <button class="button" data-filter=".witch">Witch</button>
+          <button class="button" data-filter=".witchblood">Witchblood</button>
           <br />
-        <button class="button" data-filter=".fae-blooded">Fae-Blooded</button>
-        <button class="button" data-filter=".mer">Mer</button>
-        <button class="button" data-filter=".cambion">Cambion</button>
-        <button class="button" data-filter=".nephilim">Nephilim</button>
+          <button class="button" data-filter=".fae-blooded">Fae-Blooded</button>
+          <button class="button" data-filter=".mer">Mer</button>
+          <button class="button" data-filter=".cambion">Cambion</button>
+          <button class="button" data-filter=".nephilim">Nephilim</button>
           <br />
-        <button class="button" data-filter=".throne">Throne</button>
-        <button class="button" data-filter=".cherub">Cherub</button>
-        <button class="button" data-filter=".seraph">Seraph</button>
+          <button class="button" data-filter=".throne">Throne</button>
+          <button class="button" data-filter=".cherub">Cherub</button>
+          <button class="button" data-filter=".seraph">Seraph</button>
           <br />
-        <button class="button" data-filter=".concubus">Concubus</button>
-        <button class="button" data-filter=".archdemon">Archdemon</button>
+          <button class="button" data-filter=".concubus">Concubus</button>
+          <button class="button" data-filter=".archdemon">Archdemon</button>
           <br />
-        <button class="button" data-filter=".ghost">Ghost</button>
-        <button class="button" data-filter=".lich">Lich</button>
-      </div>
-      
-      <div class="button-group" data-filter-group="misc">
-        <h3>Misc. </h3>
-        <button class="button is-checked" data-filter="">*</button>
-        <button class="button" data-filter=".dnd">D&D</button>
-        <button class="button" data-filter=".mayfair">Mayfair</button>
-      </div> <h2> Filters </h2> <hr>
-	  </div>
-	
-	</div>
-	<div id="right-bar-characters">
-		<div id="slide-button">
-			<span class="slide-button-open" onclick="openNav()">
+          <button class="button" data-filter=".ghost">Ghost</button>
+          <button class="button" data-filter=".lich">Lich</button>
+        </div>
+
+        <div class="button-group" data-filter-group="misc">
+          <h3>Misc. </h3>
+          <button class="button is-checked" data-filter="">*</button>
+          <button class="button" data-filter=".dnd">D&D</button>
+          <button class="button" data-filter=".mayfair">Mayfair</button>
+        </div>
+        <h2> Filters </h2>
+        <hr /> </div>
+
+    </div>
+    <div id="right-bar-characters">
+      <div id="slide-button">
+        <span class="slide-button-open" onclick="openNav()">
 				<i class="fa fa-angle-double-down" aria-hidden="true"></i> </span>
-			<span class="slide-button-close" onclick="closeNav()">
+        <span class="slide-button-close" onclick="closeNav()">
 				<i class="fa fa-angle-double-up" aria-hidden="true"></i></span>
-		</div><div id="triangle"></div><br><br>
-		
-		<div class="character-select"> </div>
-		
-		  <script>
+      </div> <div id="triangle"></div><br /><br />
+
+      <div class="character-select"> </div>
+
+    </div>
+
+  </div>
+  </div>
+</body>
+
+<footer>
+  	<script>
 		  var select = document.getElementById('chara-select');
       var chara = select.import.querySelector('#chara-select');
       var characont = document.querySelector('.character-select');
@@ -178,35 +183,24 @@ function concatValues( obj ) {
       var profiles = imports.import.querySelector('#block');
       var header = document.querySelector('head');
       header.appendChild(profiles.cloneNode(true));
+    </script>
 
-	    </script>
-		
-		</div>
-		
-	</div>
-  </div>
+  	<script type = "text/javascript" >
+  		    $(window).load(function() {
+  		      //   setTimeout(function() {
+  		      //   $("#loading").fadeOut("slow");
+  		      //  }, 3000); 
 
-</body>
+  		      $(".profile-view-port").fadeToggle("slow");
+  		      var timeoutID;
 
-<footer>
-	  <script type="text/javascript">
-	  $(window).load(function(){
-	 //   setTimeout(function() {
-   //   $("#loading").fadeOut("slow");
-  //  }, 3000); 
-  
-    $(".profile-view-port").fadeToggle("slow");
-    var timeoutID;
-	    
-		
-      var $grid = $('div#chara-select').isotope({
-      });
-      $grid.isotope('reloadItems')
-      $grid.isotope({
-        sortBy: 'name',
-        filter: '*'
-      });
-  });
-  </script>
+  		      var $grid = $('div#chara-select').isotope({});
+  		      $grid.isotope('reloadItems')
+  		      $grid.isotope({
+  		        sortBy: 'name',
+  		        filter: '*'
+  		      });
+  		    }); 
+  	</script>
 </footer>
 </html>
