@@ -103,7 +103,13 @@
   display: inline-block;
 }
 
-.color {
-  border: none;
-  @include text-shadow(transparent)
+
+.info .stripe {
+  height: 10px;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+  color: transparent;
+  border-radius: 50px;
+  @include user-select(none)
 }
