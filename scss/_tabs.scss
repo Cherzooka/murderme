@@ -45,14 +45,16 @@
 }
 
 #profile {
-  margin-left: 55px;
-  margin-right: 465px;
+  margin-left: 52px;
+  margin-right: 460px;
   border: 2px solid $bordercolor;
   border-radius: 5px;
   top: 121px;
   bottom: 10px;
   position: fixed;
   overflow-x: scroll;
+  background: $backgroundcolor;
+  @include transition(linear .5s)
 }
 
 .tab {

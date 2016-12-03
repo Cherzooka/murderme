@@ -30,7 +30,7 @@
   width: 7px;
   height: 10px;
 }
-      
+
 ::-webkit-scrollbar-thumb {
   background: $sorting-container;
   border-radius: 50px;
@@ -41,6 +41,7 @@
 }
 
 body {
+  background: url("img/gplay.png");
   background-color: $backgroundcolor;
 }
 
@@ -109,4 +110,39 @@ h3 {
   width: 50px;
   display: inline-block;
   background-color: red;
+  display: none;
 }
+
+.ui-widget-content {
+  background: $backgroundcolor;
+  border: 2px solid $bordercolor;
+  color: $fontcolor;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	background: transparent;
+	border: 0;
+}
+.ui-dialog .ui-dialog-title {
+	font-family: 'Alex Brush', cursive;
+	font-size: 30px;
+	color: $fontcolor;
+	border-bottom: 2px solid $bordercolor;
+	@include text-shadow($bordercolor)
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	top: 30%;
+	margin: -10px 0 0 0;
+	outline: none;
+	border: 0;
+	background: white;
+}
+.ui-dialog .ui-dialog-content {
+	background: #e4dddc;
+	font-family: 'Muli', sans-serif;
+	font-size: 14px;
+	border: 0;
+}
+
+
+

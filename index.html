@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
     
   <link rel="import" id="chara-select" href="character-select.html">
+  <link rel="import" id="openers-block" href="pop-ups.html">
   <link rel="import" id="profile-block" href="profiles.html">
-    
+  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />  
   <link id="pagestyle" rel="stylesheet" type="text/css" href="css/base.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Muli|Alex+Brush|Felipa'>
@@ -15,7 +17,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="js/index.js"></script>
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
   <script src="js/call-characters.js"></script>
   <script src="js/jquery.style-my-tooltips.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.js"></script>
@@ -81,7 +86,18 @@
   <div class="profile-view-port"> </div>
 
   <div id="left-side-bar">
-    <span class="test-button" onclick="callTemplate()"> </span></div>
+    <span class="test-button" onclick="callTemplate()"> </span>
+    
+    <a class="hide-filters" title="Toggle Character Select Panel">
+      <span class="open-filters" onclick="openFilters()">
+        <i class="fa fa-align-justify" aria-hidden="true"></i></span>
+      <span class="close-filters" onclick="closeFilters()">
+        <i class="fa fa-align-justify" aria-hidden="true"></i></span>
+    </span>
+    
+          
+
+    </div>
 
   <div id="right-side-bar">
     <div id="right-bar-sorting-container">
@@ -167,9 +183,12 @@
       <div class="character-select"> </div>
 
     </div>
+    
+      <div class="openers"> </div>
 
   </div>
   </div>
+  
 </body>
 
 <footer>
@@ -184,10 +203,15 @@
       var header = document.querySelector('head');
       header.appendChild(profiles.cloneNode(true));
       
-      // var imports = document.getElementById('template-profile');
-      // var profiles = imports.import.querySelector('#profile');
-      // var header = document.querySelector('.profile-view-port');
-      // header.appendChild(profiles.cloneNode(true));
+      var imports = document.getElementById('template-profile');
+      var profiles = imports.import.querySelector('#profile');
+      var header = document.querySelector('.profile-view-port');
+      header.appendChild(profiles.cloneNode(true));
+      
+      var imports = document.getElementById('openers-block');
+      var profiles = imports.import.querySelector('#openers');
+      var header = document.querySelector('.openers');
+      header.appendChild(profiles.cloneNode(true));
     </script>
 
   	<script type = "text/javascript" >
@@ -196,7 +220,7 @@
   		      //   $("#loading").fadeOut("slow");
   		      //  }, 3000); 
 
-  		      $(".profile-view-port").fadeToggle("slow");
+  		      // $(".profile-view-port").fadeToggle("slow");
   		      var timeoutID;
 
   		      var $grid = $('div#chara-select').isotope({});
@@ -207,5 +231,271 @@
   		      });
   		    }); 
   	</script>
+  	
+  	  	<script> 
+  	$( "#dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#opener" ).click(function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+
+  	$( "#human-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#human-opener" ).click(function() {
+      $( "#human-dialog" ).dialog( "open" );
+    });
+    
+    $( "#magical-creature-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#magical-creature-opener" ).click(function() {
+      $( "#magical-creature-dialog" ).dialog( "open" );
+    });
+    
+    $( "#demon-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#demon-opener" ).click(function() {
+      $( "#demon-dialog" ).dialog( "open" );
+    });
+    
+    $( "#angel-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#angel-opener" ).click(function() {
+      $( "#angel-dialog" ).dialog( "open" );
+    });
+    
+    $( "#undead-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#undead-opener" ).click(function() {
+      $( "#undead-dialog" ).dialog( "open" );
+    });
+        $( "#mundane-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#mundane-opener" ).click(function() {
+      $( "#mundane-dialog" ).dialog( "open" );
+    });
+    
+        $( "#witch-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#witch-opener" ).click(function() {
+      $( "#witch-dialog" ).dialog( "open" );
+    });
+    
+        $( "#witchblood-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#witchblood-opener" ).click(function() {
+      $( "#witchblood-dialog" ).dialog( "open" );
+    });
+    
+        $( "#fae-blooded-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    closeText: "",
+  	    modal: true,
+  	    resizable: false
+  	});
+      $( "#fae-blooded-opener" ).click(function() {
+      $( "#fae-blooded-dialog" ).dialog( "open" );
+    });
+    
+        $( "#mer-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#mer-opener" ).click(function() {
+      $( "#mer-dialog" ).dialog( "open" );
+    });
+    
+        $( "#cambion-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#cambion-opener" ).click(function() {
+      $( "#cambion-dialog" ).dialog( "open" );
+    });
+    
+        $( "#nephilim-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#nephilim-opener" ).click(function() {
+      $( "#nephilim-dialog" ).dialog( "open" );
+    });
+    
+        $( "#concubus-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#concubus-opener" ).click(function() {
+      $( "#concubus-dialog" ).dialog( "open" );
+    });
+    
+        $( "#archdemon-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    closeText: "",
+  	    modal: true,
+  	    resizable: false
+  	});
+      $( "#archdemon-opener" ).click(function() {
+      $( "#archdemon-dialog" ).dialog( "open" );
+    });
+    
+        $( "#throne-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#throne-opener" ).click(function() {
+      $( "#throne-dialog" ).dialog( "open" );
+    });
+    
+        $( "#cherub-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    closeText: "",
+  	    modal: true,
+  	    resizable: false
+  	});
+      $( "#cherub-opener" ).click(function() {
+      $( "#cherub-dialog" ).dialog( "open" );
+    });
+    
+        $( "#seraph-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    closeText: "",
+  	    modal: true,
+  	    resizable: false
+  	});
+      $( "#seraph-opener" ).click(function() {
+      $( "#seraph-dialog" ).dialog( "open" );
+    });
+    
+        $( "#ghost-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    closeText: "",
+  	    modal: true,
+  	    resizable: false
+  	});
+      $( "#ghost-opener" ).click(function() {
+      $( "#ghost-dialog" ).dialog( "open" );
+    });
+    
+        $( "#lich-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#lich-opener" ).click(function() {
+      $( "#lich-dialog" ).dialog( "open" );
+    });
+    
+            $( "#mayfair-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#mayfair-opener" ).click(function() {
+      $( "#mayfair-dialog" ).dialog( "open" );
+    });
+    
+            $( "#shafir-dialog" ).dialog({ 
+  	    autoOpen: false,
+  	    width: 500,
+  	    maxHeight: 500,
+  	    modal: true,
+  	    closeText: "",
+  	    resizable: false
+  	});
+      $( "#shafir-opener" ).click(function() {
+      $( "#shafir-dialog" ).dialog( "open" );
+    });
+  </script>
+  	
 </footer>
 </html>
