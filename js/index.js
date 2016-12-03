@@ -30,3 +30,19 @@ function closeNav() {
     $("[title]").style_my_tooltips();
   });
 })(jQuery);
+
+function openMusic() {
+    document.getElementById("music").style.width = "300px";
+    document.getElementById("player").style.width = "320px";
+    document.getElementById("music-tab").style.marginRight = "300px";
+    $(".music-button-open").fadeToggle("slow");
+	  $(".music-button-close").fadeToggle("slow");
+}
+
+function closeMusic() {
+    document.getElementById("music").style.width = "0";
+    document.getElementById("player").style.width = "40px";
+    document.getElementById("music-tab").style.marginRight = "0";
+    $(".music-button-open").fadeToggle("slow");
+	  $(".music-button-close").fadeToggle("slow");
+}

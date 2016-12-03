@@ -1,10 +1,22 @@
 <div id="profile" class="erinys">  
 
-  <div class="player"><iframe src="https://embed.spotify.com/?uri=spotify:user:1258989623:playlist:7jc7Xg6XN4fi0UugBtqEWB" 
-		    width="300" 
-		    height="80" 
-		    frameborder="0" 
-		    allowtransparency="true"></iframe></div>
+  <div id="player">
+    <div id="music">
+    <iframe src="https://embed.spotify.com/?uri=spotify:user:1258989623:playlist:7jc7Xg6XN4fi0UugBtqEWB" 
+		  width="280" 
+		  height="80" 
+		  frameborder="0" 
+		  allowtransparency="true"></iframe></div>
+		  
+		<div id="music-tab"> 
+      <span class="music-button-open" onclick="openMusic()">
+        <i class="fa fa-angle-double-left" aria-hidden="true"></i></span>
+      <span class="music-button-close" onclick="closeMusic()">
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+      </div>
+      
+      <div id="music-label"><i class="fa fa-music" aria-hidden="true"></i></div>
+	</div>
 
   <strong class="character-header"> Character Name </strong>
 
@@ -12,10 +24,7 @@
       <li class="current"><a href="#tab-1"> Basics </a></li>
       <li><a href="#tab-2"> Biography </a></li>
       <li><a href="#tab-3"> Relationships </a></li>
-      <li><a href="#tab-4">Tab 4</a></li>
-      <li><a href="#tab-5">Tab 5</a></li>
-      <li><a href="#tab-6">Tab 6</a></li>
-      <li><a href="#tab-7"> Miscellaneous </a></li>
+      <li><a href="#tab-4"> Miscellaneous </a></li>
     </ul>
     
 <!--- TABS CONTENT START ------------------------------------------------------>
@@ -27,11 +36,11 @@
 	  
 		<div id="tab-1" class="tab-content"> 
 	    <div class="tag-block"> <ul> 
-				<li> <b>Time Period:</b> time period </li> 
-				<li> <b>Gender:</b> gender </li> 
-				<li> <b>Player:</b> player </li> 
-				<li> <b>Species:</b> species </li> 
-				<li> <b>Sub-Species:</b> sub species </li> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Time Period:</b> time period </li> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Gender:</b> gender </li> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Player:</b> player </li> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Species:</b> species </li> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Sub-Species:</b> sub species </li> 
 			</ul> <hr /> </div>
 			
 			<strong class="intro"> Introduction </strong>
@@ -63,7 +72,7 @@
       
 	    <ul class="info"> 
 	      <li> <hr /> <b>Full Name:</b> Full Character Name </li>
-	      <li> <hr /> <b>Nicknames & Aliases:</b> Any Nicknames, or Aliases they've used. </li>
+	      <li> <hr /> <b>Nicknames:</b> Any Nicknames, or Aliases they've used. </li>
 	      <li> <hr /> <b>Life Span:</b> Birth Date - Death Date </li>
 	      <li> <hr /> <b>Gender:</b> Gender </li>
 	      <li> <hr /> <b>Pronouns:</b> pro/nouns </li>
@@ -93,10 +102,13 @@
 	        
 	        <button id="ghost-opener">Ghost</button>
 	        <button id="lich-opener">Lich</button>
+	        
+	        <button id="mayfair-opener">Mayfair Bloodline</button>
+	        <button id="shafir-opener">Shafir Bloodline</button>
 	        </li>
 	      <li> <hr /> <b>Orientation:</b> Romantic+Sexual </li>
 	      <li> <hr /> <b>Height:</b> Height </li>
-	      <li> <hr /> <b>Associated Color:</b> <span class="stripe"> ____________ </span> #000000 </li>
+	      <li> <hr /> <b>Color:</b> <span class="stripe"> ____________ </span> #000000 </li>
 	      </ul>
 	  </div>
 	  
@@ -104,7 +116,8 @@
 	  
 		<div id="tab-2" class="tab-content"> 
 		<div class="biography">
-		  <strong class="bio-header"> Childhood </strong>
+		  <div class="biography-category">
+		  <strong class="bio-header"> Childhood </strong> <br /> <br />
 		  <p>
 		    Lorem ipsum dolor sit amet, consectetur adipiscing 
 			  elit. Curabitur at magna dignissim, maximus nisi sit amet, ornare 
@@ -129,8 +142,9 @@
         felis eu, venenatis metus. Integer eget augue feugiat, consequat velit 
         pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
 		  </p>
-		  
-		  <hr /> <strong class="bio-header"> Adolescence </strong>
+		</div>
+		  <div class="biography-category">
+		  <strong class="bio-header"> Adolescence </strong> <br /> <br />
 		  <p>
 		    Lorem ipsum dolor sit amet, consectetur adipiscing 
 			  elit. Curabitur at magna dignissim, maximus nisi sit amet, ornare 
@@ -155,9 +169,10 @@
         felis eu, venenatis metus. Integer eget augue feugiat, consequat velit 
         pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
 		  </p>
-		  
-		  <hr /> <strong class="bio-header"> Adulthood </strong>
-		  <p>
+		  </div>
+		  <div class="biography-category">
+		  <strong class="bio-header"> Adulthood </strong> <br /> <br />
+		  <p> 
 		    Lorem ipsum dolor sit amet, consectetur adipiscing 
 			  elit. Curabitur at magna dignissim, maximus nisi sit amet, ornare 
 			  tortor. Suspendisse commodo est id blandit ultricies. Donec tincidunt 
@@ -181,6 +196,7 @@
         felis eu, venenatis metus. Integer eget augue feugiat, consequat velit 
         pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
 		  </p>
+		  </div>
 		  </div>
 		</div>
 		
@@ -251,45 +267,61 @@
 		  
 		</div>
 		
-		<!--- ??? INFORMATION ----------------------------------------------------->
-		
-		<div id="tab-4" class="tab-content"> 
-		  ??? tab
-		</div>
-		
-		<!--- ??? INFORMATION ----------------------------------------------------->
-		
-		<div id="tab-5" class="tab-content"> 
-		  ??? tab
-		</div>
-		
-		<!--- ??? INFORMATION ----------------------------------------------------->
-		
-		<div id="tab-6" class="tab-content"> 
-		  ??? tab
-		</div>
-		
 		<!--- MISCELLANEOUS INFORMATION ------------------------------------------->
 		
-		<div id="tab-7" class="tab-content"> 
+		<div id="tab-4" class="tab-content"> 
 		  <div class="misc">
-		  <p>
-		    Lorem ipsum dolor sit amet, consectetur adipiscing 
-			  elit. Curabitur at magna dignissim, maximus nisi sit amet, ornare 
-			  tortor. Suspendisse commodo est id blandit ultricies. Donec tincidunt 
-			  metus sit amet eros imperdiet accumsan. In et libero quis risus 
-			  ultrices suscipit a id dui. Phasellus ante sem, aliquet non justo eu, 
-			  gravida eleifend ipsum. Proin mi neque, volutpat ut malesuada et, 
-			  gravida nec justo. Nam cursus nisl eu accumsan commodo. In faucibus sit 
-			  amet est vel elementum.
-		  </p>
-		  
+		<ul> <strong> Notes </strong>
+		  <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc 
+		    rhoncus sollicitudin augue malesuada lacinia. Aliquam eleifend ex quis 
+		    congue rhoncus. Praesent pharetra convallis sollicitudin. Vivamus non 
+		    libero eu libero posuere fermentum. Ut euismod, arcu viverra ultrices 
+		    hendrerit, dui diam tempus risus, vel consectetur erat dolor vitae 
+		    urna. Cum sociis natoque. </li>
+		  <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut 
+		    imperdiet tellus. Suspendisse malesuada tempor ligula sed facilisis. 
+		    Morbi egestas. </li>
+		  <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et 
+		    nisl et tortor cursus dignissim. Quisque consectetur non metus a 
+		    fermentum. Nulla at massa tincidunt, dictum augue a, venenatis dolor. 
+		    Curabitur gravida pretium orci, vel molestie sem accumsan non. In quis 
+		    placerat tellus. Vivamus ultrices et nunc sed malesuada. Maecenas eget 
+		    aliquet erat, non varius diam. Vestibulum ante ipsum primis in faucibus 
+		    orci luctus et ultrices posuere cubilia Curae; Praesent.</li>
+		  <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et metus 
+		    vestibulum, volutpat massa pretium, lacinia mi. Fusce dapibus quis leo 
+		    quis suscipit. Curabitur eu augue dignissim, pellentesque erat 
+		    dignissim. </li>
+		</ul>
+		    
+		    <div class="tropes-block">
+		      <strong> Tropes </strong>
+		      <a href="#"> Lorem </a>
+          <a href="#"> ipsum </a>
+          <a href="#"> dolor </a>
+          <a href="#"> sit </a>
+          <a href="#"> amet </a>
+          <a href="#"> consectetur </a>
+          <a href="#"> adipiscing  </a>
+          <a href="#"> elit </a>
+          <a href="#"> Lorem </a>
+          <a href="#"> ipsum </a>
+          <a href="#"> dolor </a>
+          <a href="#"> sit </a>
+          <a href="#"> amet </a>
+          <a href="#"> consectetur </a>
+          <a href="#"> adipiscing  </a>
+          <a href="#"> elit </a>
+		    </div>
+
+		  <div class="pinterest">
+		    <strong> Pinterest </strong> 
 		  <a href="https://www.pinterest.com/cherzooka/erinys/"
 		    data-pin-do="embedBoard" 
-		    data-pin-board-width="100" 
-		    data-pin-scale-height="500" 
-		    data-pin-scale-width="60"></a>
-		  </div>
+		    data-pin-board-width="50" 
+		    data-pin-scale-height="300" 
+		    data-pin-scale-width="10"></a>
+		  </div></div>
 		</div>
 		
 		<!------------------------------------------------------------------------->

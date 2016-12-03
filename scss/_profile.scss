@@ -6,6 +6,7 @@
   position: fixed;
   top: 20px;
   margin-left: 25px;
+  cursor: default;
   @include user-select(none)
 }
 
@@ -74,6 +75,7 @@
 	margin-top: -8px;
 	z-index: 2;
 	text-align: center;
+	cursor: default;
 	vertical-align:middle;
 	@include user-select(none)
 }
@@ -96,6 +98,11 @@
     height: 2px;
 }
 
+.tag-block i {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
 .intro {
   float: right;
   right: 0;
@@ -106,6 +113,7 @@
   margin-bottom: 10px;
   display: inline-block;
   position: absolute;
+  cursor: default;
   @include user-select(none)
 }
 
@@ -113,6 +121,8 @@
   float: right;
   width: 45%;
   margin-top: 50px;
+  font-size: 15px;
+  font-family: 'Muli', sans-serif;
   margin-right: 10px;
   display: inline-block;
 }
@@ -129,30 +139,32 @@
 }
 
 .biography {
-  padding: 0 100px;
+  padding: 0 50px;
+}
+
+.biography-category {
+  border-top: 2px solid $bordercolor;
+  border-radius: 5px;
+  padding: 0 50px;
+  padding-bottom: 25px;
+  margin-top: 15px;
 }
 
 .biography p {
   text-indent: 20px;
   margin-top: 0;
+  font-family: 'Muli', sans-serif;
   line-height: 25px;
-}
-
-.biography hr {
-    margin-top: 1px;
-    background-color: $bordercolor;
-    border-radius: 40px;
-    border: none;
-    height: 2px;
-    margin: 0 25px;
-    margin-bottom: 15px;
 }
 
 .bio-header {
   font-size: 50px;
   font-family: 'Alex Brush', cursive;
-  margin-bottom: -20px;
+  margin-top: -30px;
   padding-left: 50px;
+  float: left;
+  cursor: default;
+  @include user-select(none)
 }
 
 .relationships {
@@ -173,6 +185,7 @@
   margin-top: 0;
   line-height: 22px;
   padding-left: 60px;
+  font-family: 'Muli', sans-serif;
   width: 475px;
 }
 
@@ -215,28 +228,136 @@
   z-index: 9;
 }
 
+#music-tab {
+  width: 20px;
+  display: inline-block;
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  @include transition(linear .5s)
+}
+
+#music {
+  display: inline-block;
+  margin-left: 20px;
+  position: fixed;
+  width: 0;
+	overflow: hidden;
+	@include transition(linear .5s)
+}
+
+#player {
+  border: 5px solid $bordercolor;
+  background: $bordercolor;
+  border-radius: 5px;
+  top: 3px;
+  width: 40px;
+  height: 80px;
+  right: 500px;
+  position: fixed;
+  z-index: 99999;
+  @include transition(linear .5s)
+}
+
+#music-label {
+  width: 20px;
+  top: 30px;
+  right: -5px;
+  color: black;
+  position: absolute;
+}
+
+.music-button-close, .music-button-open {
+  top: 30px;
+  left: 0;
+  position: absolute;
+}
+
+.music-button-close {
+  display: none;
+}
+
 .misc {
   text-align: center;
   display: inline-block;
   vertical-align: middle;
 }
 
-.player {
-  border: 5px solid $bordercolor;
+.misc ul {
+  text-align: left;
+  display: inline-block;
+  font-family: 'Muli', sans-serif;
+  border-top: 2px solid $bordercolor;
   border-radius: 5px;
-  top: 15px;
-  right: 500px;
-  position: fixed;
+  padding-top: 23px;
+  margin: 0 50px;
 }
 
-.misc a {
-  float: right;
+.misc li {
+  margin: 5px 50px;
 }
 
+.tropes-block {
+  display: inline-block;
+  border-top: 2px solid $bordercolor;
+  border-bottom: 2px solid $bordercolor;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 25px 50px;
+}
 
-div.misc > span {
+.misc strong {
+  float: left;
+  position: absolute;
+  font-family: 'Alex Brush', cursive;
+  font-size: 35px;
+  margin-top: -45px;
+  cursor: default;
+  @include user-select(none)
+}
+
+.tropes-block a {
+    cursor: pointer;
+    color: $fontcolor;
+    background: $bordercolor;
+    padding: 1px 20px;
+    border-radius: 5px;
+    font-family: 'Muli', sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 5px;
+    @include transition (linear 0.3s)
+}
+
+.tropes-block a:hover {
+    color: $fontcolor;
+    background: $color3;
+    @include transition (linear 0.3s)
+}
+
+.pinterest {
+  border-top: 2px solid $bordercolor;
+  margin: 0 50px;
+  border-radius: 5px;
+  padding-top: 25px;
+}
+
+.pinterest strong {
+  margin-left: 50px;
+  position: relative;
+}
+
+div.pinterest > span > span:first-child {
+  display: none !important;
+}
+
+.div.pinterest > span > span:last-child {
+  display: none;
+}
+
+div.pinterest > span {
   box-shadow: 0 0 0 transparent !important;
   background: transparent none !important;
   padding: 0 !important;
-  margin: 0 !important;
+  margin: 0;
 }
