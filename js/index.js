@@ -46,3 +46,19 @@ function closeMusic() {
     $(".music-button-open").fadeToggle("slow");
 	  $(".music-button-close").fadeToggle("slow");
 }
+
+function openFilters() {
+  document.getElementById("right-side-bar").style.width = "0";
+  document.getElementById("profile").style.marginRight = "10px";
+  document.getElementById("player").style.marginRight = "-450px";
+  $(".open-filters").fadeToggle("slow");
+	$(".close-filters").fadeToggle("slow");
+}
+
+function closeFilters() {
+  document.getElementById("right-side-bar").style.width = "450px";
+  document.getElementById("profile").style.marginRight = "460px";
+  document.getElementById("player").style.marginRight = "0";
+  $(".open-filters").fadeToggle("slow");
+	$(".close-filters").fadeToggle("slow");
+}

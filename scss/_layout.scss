@@ -18,6 +18,7 @@
 	right: 0;
 	top: 0;
 	border-left: 2px solid $bordercolor;
+	@include transition(linear .5s)
 }
 
 #right-bar-sorting-container {
@@ -69,4 +70,16 @@
 
 .slide-button-close {
 	display: none;
+}
+
+.open-filters, .close-filters {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  color: $bordercolor;
+}
+
+.close-filters {
+  display: none;
 }
