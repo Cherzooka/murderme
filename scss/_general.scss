@@ -27,12 +27,12 @@
 
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 5px;
   height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $sorting-container;
+  background: $bordercolor;
   border-radius: 50px;
 }
       

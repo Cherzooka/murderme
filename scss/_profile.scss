@@ -18,6 +18,20 @@
   margin-top: -20px;
 }
 
+.tab-stripe {
+  background: red;
+  height: 50px;
+  width: 100%;
+  z-index: -999;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -20px;
+  position: fixed;
+  -ms-transform: rotate(-40deg); /* IE 9 */
+  -webkit-transform: rotate(-40deg); /* Safari */
+  transform: rotate(-40deg);
+}
+
 .info {
   text-align: left;
   list-style: none;
@@ -134,6 +148,10 @@
   text-align: right;
   margin-right: 10px;
   color: transparent;
+  border-left: 3px solid $bordercolor;
+  border-right: 3px solid $bordercolor;
+  border-top: 1px solid $bordercolor;
+  border-bottom: 1px solid $bordercolor;
   border-radius: 50px;
   @include user-select(none)
 }
@@ -300,8 +318,7 @@
 .tropes-block {
   display: inline-block;
   border-top: 2px solid $bordercolor;
-  border-bottom: 2px solid $bordercolor;
-  padding: 25px;
+  padding: 25px 0;
   border-radius: 5px;
   margin: 25px 50px;
 }

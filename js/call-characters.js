@@ -764,3 +764,16 @@ function callYeonjun() {
     $("#profile-loading").delay(1000).fadeOut(500);
   $(".profile-view-port").delay(1000).fadeIn(500);
 }
+
+function callNereus() {
+  $(".profile-view-port").html("").fadeOut(500);
+  $("#profile-loading").fadeIn(500);
+  setTimeout(function(){
+    var view = document.getElementById('nereus-profile');
+    var profile = view.import.querySelector('#profile');
+    var profileview = document.querySelector('.profile-view-port');
+    profileview.appendChild(profile.cloneNode(true));
+    }, 700);
+    $("#profile-loading").delay(1000).fadeOut(500);
+  $(".profile-view-port").delay(1000).fadeIn(500);
+}
