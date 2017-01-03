@@ -80,7 +80,7 @@
 
 </head>
 <body>
-  <!-- <div id="loading"> </div> -->
+  <div id="loading"> </div>
   <div id="profile-loading"> </div>
 
   <div class="profile-view-port"> </div>
@@ -204,11 +204,6 @@
       var header = document.querySelector('head');
       header.appendChild(profiles.cloneNode(true));
       
-      var imports = document.getElementById('template-profile');
-      var profiles = imports.import.querySelector('#profile');
-      var header = document.querySelector('.profile-view-port');
-      header.appendChild(profiles.cloneNode(true));
-      
       var imports = document.getElementById('openers-block');
       var profiles = imports.import.querySelector('#openers');
       var header = document.querySelector('.openers');
@@ -217,11 +212,11 @@
 
   	<script type = "text/javascript" >
   		    $(window).load(function() {
-  		      //   setTimeout(function() {
-  		      //   $("#loading").fadeOut("slow");
-  		      //  }, 3000); 
+  		         setTimeout(function() {
+  		         $("#loading").fadeOut("slow");
+  		        }, 3000); 
 
-  		      // $(".profile-view-port").fadeToggle("slow");
+  		       $(".profile-view-port").fadeToggle("slow");
   		      var timeoutID;
 
   		      var $grid = $('div#chara-select').isotope({});

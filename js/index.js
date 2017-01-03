@@ -49,7 +49,10 @@ function closeMusic() {
 
 function openFilters() {
   document.getElementById("right-side-bar").style.width = "0";
-  document.getElementById("profile").style.marginRight = "10px";
+  document.getElementById("tab-content1").style.marginRight = "10px";
+  document.getElementById("tab-content2").style.marginRight = "10px";
+  document.getElementById("tab-content3").style.marginRight = "10px";
+  document.getElementById("tab-content4").style.marginRight = "10px";
   document.getElementById("player").style.marginRight = "-450px";
   $(".open-filters").fadeToggle("slow");
 	$(".close-filters").fadeToggle("slow");
@@ -57,7 +60,10 @@ function openFilters() {
 
 function closeFilters() {
   document.getElementById("right-side-bar").style.width = "450px";
-  document.getElementById("profile").style.marginRight = "460px";
+  document.getElementById("tab-content1").style.marginRight = "460px";
+  document.getElementById("tab-content2").style.marginRight = "460px";
+  document.getElementById("tab-content3").style.marginRight = "460px";
+  document.getElementById("tab-content4").style.marginRight = "460px";
   document.getElementById("player").style.marginRight = "0";
   $(".open-filters").fadeToggle("slow");
 	$(".close-filters").fadeToggle("slow");

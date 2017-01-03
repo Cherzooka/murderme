@@ -51,7 +51,8 @@
     top: 121px;
     bottom: 10px;
     position: fixed;
-    left: 0; 
+    left: 0;
+    @include transition(linear .5s)
   }
   //The Magic
   [id^="tab"]:checked + label { 

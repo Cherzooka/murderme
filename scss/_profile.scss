@@ -206,6 +206,7 @@
   margin-top: 0;
   line-height: 22px;
   padding-left: 60px;
+  font-size: 15px;
   font-family: 'Muli', sans-serif;
   width: 375px;
 }
@@ -319,7 +320,6 @@
 }
 
 .tropes-block {
-  display: inline-block;
   border-top: 2px solid $bordercolor;
   padding: 25px 0;
   border-radius: 5px;
@@ -347,6 +347,11 @@
     text-decoration: none;
     margin-top: 5px;
     @include transition (linear 0.3s)
+}
+
+.tropes-block strong {
+  margin-left: 50px;
+  position: relative;
 }
 
 .tropes-block a:hover {

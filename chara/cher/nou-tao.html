@@ -1,5 +1,7 @@
 <div id="profile" class="nou">  
 
+<!------------------------------------------------------------ MUSIC PLAYER --->
+
   <div id="player">
     <div id="music">
     <iframe src="https://embed.spotify.com/?uri=spotify:user:1258989623:playlist:7jc7Xg6XN4fi0UugBtqEWB" 
@@ -18,32 +20,41 @@
       <div id="music-label"><i class="fa fa-music" aria-hidden="true"></i></div>
 	</div>
 
+<!------------------------------------------------------------- NAME HEADER --->
+
   <strong class="character-header"> Nou Tao </strong>
+  
+<!------------------------------------------------------------ TABS CONTENT --->
 
-    <ul class="tabs-menu"> 
-      <li class="current"><a href="#tab-1"> Basics </a></li>
-      <li><a href="#tab-2"> Biography </a></li>
-      <li><a href="#tab-3"> Relationships </a></li>
-      <li><a href="#tab-4"> Miscellaneous </a></li>
-    </ul>
-    
-<!--- TABS CONTENT START ------------------------------------------------------>
+  <ul class="tabs" role="tablist">
+  
+<!-------------------------------------------------------------- BASICS TAB --->
 
-  <div id="tabs-container">
-	<div class="tab">
-	  
-	  <!--- BASIC INFORMATION --------------------------------------------------->
-	  
-		<div id="tab-1" class="tab-content"> 
-	    <div class="tag-block"> <ul> 
-				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Time Period:</b> Far Future </li> 
-				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Gender:</b> Female </li> 
-				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Player:</b> Cher </li> 
-				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Species:</b> Human </li> 
-				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Sub-Species:</b> Witchblood </li> 
-			</ul> <hr /> </div>
-			
-			<strong class="intro"> Introduction </strong>
+    <li>
+      <input type="radio" name="tabs" id="tab1" checked />
+      <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" 
+        tabindex="0" style="margin-left: 50px;"> Basics </label>
+      <div id="tab-content1" class="tab-content" role="tabpanel" 
+        aria-labelledby="basics" aria-hidden="false">
+        
+    <!------------>
+  
+      <div class="tag-block"> <ul> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> 
+				  <b>Time Period:</b> Far Future </li> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> 
+				  <b>Gender:</b> Female </li> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> 
+				  <b>Player:</b> Cher </li> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> 
+				  <b>Species:</b> Human </li> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> 
+				  <b>Sub-Species:</b> Witchblood </li> 
+			 </ul> <hr /> </div>
+			 
+		<!------------>
+			  
+		<strong class="intro"> Introduction </strong>
 			<p class="intro-blurb"> 
 			  Lorem ipsum dolor sit amet, consectetur adipiscing 
 			  elit. Curabitur at magna dignissim, maximus nisi sit amet, ornare 
@@ -54,7 +65,7 @@
 			  gravida nec justo. Nam cursus nisl eu accumsan commodo. In faucibus sit 
 			  amet est vel elementum.
 			  
-			  <br /> <br />
+			    <br /> <br />
 
         Morbi id sapien varius, imperdiet felis in, viverra ipsum. Vestibulum 
         iaculis sem a lectus luctus finibus. Aenean malesuada malesuada nunc, 
@@ -70,30 +81,40 @@
         pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
       </p>
       
-	    <ul class="info"> 
-	      <li> <hr /> <b>Full Name:</b> Nou Tao </li>
-	      <li> <hr /> <b>Nicknames:</b> Any Nicknames, or Aliases they've used. </li>
-	      <li> <hr /> <b>Life Span:</b> Birth Date - Death Date </li>
-	      <li> <hr /> <b>Gender:</b> Female </li>
-	      <li> <hr /> <b>Pronouns:</b> she/her </li>
-	      <li> <hr /> <b>Species:</b>
-	        <button id="human-opener">Human</button> 
-	        </li>
-	      <li> <hr /> <b>Sub-Species:</b> 
-	        <button id="witchblood-opener">Witchblood</button>
-	        </li>
-	      <li> <hr /> <b>Orientation:</b> Romantic+Sexual </li>
-	      <li> <hr /> <b>Height:</b> Height </li>
-	      <li> <hr /> <b>Color:</b> <span class="stripe"> ____________ </span> #a81963 </li>
-	      </ul>
-	  </div>
-	  
-	  <!--- BIOGRAPHY INFORMATION ----------------------------------------------->
-	  
-		<div id="tab-2" class="tab-content"> 
-		<div class="biography">
-		  <div class="biography-category">
-		  <strong class="bio-header"> Childhood </strong> <br /> <br />
+    <!------------>
+      
+      <ul class="info"> 
+	     <li> <hr /> <b>Full Name:</b> Nou Tao </li>
+	     <li> <hr /> <b>Nicknames:</b> Any Nicknames, or Aliases they've used. </li>
+	     <li> <hr /> <b>Life Span:</b> Birth Date - Death Date </li>
+	     <li> <hr /> <b>Gender:</b> Female </li>
+	     <li> <hr /> <b>Pronouns:</b> she/her </li>
+	     <li> <hr /> <b>Species:</b> 
+	      <button id="human-opener">Human</button> 
+	     </li>
+	     <li> <hr /> <b>Sub-Species:</b> 
+	      <button id="witchblood-opener">Witchblood</button>
+	      ( Wild ) *
+	     </li>
+	     <li> <hr /> <b>Orientation:</b> Bisexual </li>
+	     <li> <hr /> <b>Height:</b> 5'3 </li>
+	     <li> <hr /> <b>Color:</b> 
+	      <span class="stripe"> ____________ </span> #a81963 </li>
+	   </ul>
+    </div></li>
+        
+<!----------------------------------------------------------- BIOGRAPHY TAB --->
+    <li>
+      <input type="radio" name="tabs" id="tab2" />
+      <label for="tab2" role="tab" aria-selected="false" 
+        aria-controls="panel2" tabindex="0"> Biography </label>
+      <div id="tab-content2" class="tab-content" role="tabpanel" 
+        aria-labelledby="biographyc" aria-hidden="true">
+        
+    <!------------>
+          
+    <div class="biography-category">
+		    <strong class="bio-header"> Childhood </strong> <br /> <br />
 		  <p>
 		    Lorem ipsum dolor sit amet, consectetur adipiscing 
 			  elit. Curabitur at magna dignissim, maximus nisi sit amet, ornare 
@@ -119,20 +140,23 @@
         pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
 		  </p>
 		</div>
-		  <div class="biography-category">
-		  <strong class="bio-header"> Adolescence </strong> <br /> <br />
-		  <p>
+		
+		<!------------>
+		
+		<div class="biography-category">
+		    <strong class="bio-header"> Adolescence </strong> <br /> <br />
+	  	<p>
 		    Lorem ipsum dolor sit amet, consectetur adipiscing 
 			  elit. Curabitur at magna dignissim, maximus nisi sit amet, ornare 
 			  tortor. Suspendisse commodo est id blandit ultricies. Donec tincidunt 
-			  metus sit amet eros imperdiet accumsan. In et libero quis risus 
-			  ultrices suscipit a id dui. Phasellus ante sem, aliquet non justo eu, 
+	  		metus sit amet eros imperdiet accumsan. In et libero quis risus 
+		  	ultrices suscipit a id dui. Phasellus ante sem, aliquet non justo eu, 
 			  gravida eleifend ipsum. Proin mi neque, volutpat ut malesuada et, 
-			  gravida nec justo. Nam cursus nisl eu accumsan commodo. In faucibus sit 
-			  amet est vel elementum.
-		  </p>
+	  		gravida nec justo. Nam cursus nisl eu accumsan commodo. In faucibus sit 
+		  	amet est vel elementum.
+	  	</p>
 		  <p>
-		    Morbi id sapien varius, imperdiet felis in, viverra ipsum. Vestibulum 
+	  	  Morbi id sapien varius, imperdiet felis in, viverra ipsum. Vestibulum 
         iaculis sem a lectus luctus finibus. Aenean malesuada malesuada nunc, 
         eget consequat odio aliquam a. Mauris finibus euismod nisi finibus 
         luctus. Mauris maximus congue nibh et maximus. Aliquam ornare purus 
@@ -145,9 +169,12 @@
         felis eu, venenatis metus. Integer eget augue feugiat, consequat velit 
         pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
 		  </p>
-		  </div>
-		  <div class="biography-category">
-		  <strong class="bio-header"> Adulthood </strong> <br /> <br />
+	  </div>
+	  
+	  <!------------>
+		
+		<div class="biography-category">
+		    <strong class="bio-header"> Adulthood </strong> <br /> <br />
 		  <p> 
 		    Lorem ipsum dolor sit amet, consectetur adipiscing 
 			  elit. Curabitur at magna dignissim, maximus nisi sit amet, ornare 
@@ -172,18 +199,50 @@
         felis eu, venenatis metus. Integer eget augue feugiat, consequat velit 
         pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
 		  </p>
-		  </div>
-		  </div>
+		</div>
+	</div></li>
+    
+<!------------------------------------------------------- RELATIONSHIPS TAB --->    
+    
+    <li>
+      <input type="radio" name="tabs" id="tab3" />
+      <label for="tab3" role="tab" aria-selected="false" aria-controls="panel3" 
+        tabindex="0"> Relationships </label>
+      <div id="tab-content3" class="tab-content" role="tabpanel" 
+        aria-labelledby="relationships" aria-hidden="true">
+        
+    <!------------>
+          
+    <div class="relationships">
+      
+    <!------------>
+    
+    <div class="relationship">
+      <div class="left"> </div> <div class="right"> </div>
+		    <strong class="relation-name"> Character Name </strong> <br />
+		    <strong class="relation-type"> - relationship </strong>
+		  <p>
+		    Morbi id sapien varius, imperdiet felis in, viverra ipsum. Vestibulum 
+        iaculis sem a lectus luctus finibus. Aenean malesuada malesuada nunc, 
+        eget consequat odio aliquam a. Mauris finibus euismod nisi finibus 
+        luctus. Mauris maximus congue nibh et maximus. Aliquam ornare purus 
+        turpis. Maecenas molestie libero id varius rutrum. Sed sollicitudin 
+        leo lorem, at rutrum sapien finibus non. Sed dolor nulla, pharetra ac 
+        est vitae, hendrerit vulputate lacus. Nulla feugiat sodales molestie. 
+        Aliquam erat volutpat. Curabitur sed pulvinar diam, id aliquet elit. 
+        Nulla venenatis, odio at maximus pretium, erat tortor congue ligula, 
+        vel faucibus nibh metus vel lacus. Nam sit amet est finibus, iaculis 
+        felis eu, venenatis metus. Integer eget augue feugiat, consequat velit 
+        pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
+		  </p>
 		</div>
 		
-		<!--- RELATIONSHIPS INFORMATION ------------------------------------------->
-		
-		<div id="tab-3" class="tab-content relationships">
+		<!------------>
 		  
-		  <div class="relationship"> 
-		  <div class="left"> </div> <div class="right"> </div>
-		  <strong class="relation-name"> Character Name </strong> <br />
-		  <strong class="relation-type"> - relationship </strong>
+    <div class="relationship">
+      <div class="left"> </div> <div class="right"> </div>
+		    <strong class="relation-name"> Character Name </strong> <br />
+		    <strong class="relation-type"> - relationship </strong>
 		  <p>
 		    Morbi id sapien varius, imperdiet felis in, viverra ipsum. Vestibulum 
         iaculis sem a lectus luctus finibus. Aenean malesuada malesuada nunc, 
@@ -198,111 +257,110 @@
         felis eu, venenatis metus. Integer eget augue feugiat, consequat velit 
         pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
 		  </p>
-		  </div>
-		  
-		  <div class="relationship">
-		  <div class="left"> </div> <div class="right"> </div>
-		  <strong class="relation-name"> Character Name </strong> <br />
-		  <strong class="relation-type"> - relationship </strong>
-		  <p>
-		    Morbi id sapien varius, imperdiet felis in, viverra ipsum. Vestibulum 
-        iaculis sem a lectus luctus finibus. Aenean malesuada malesuada nunc, 
-        eget consequat odio aliquam a. Mauris finibus euismod nisi finibus 
-        luctus. Mauris maximus congue nibh et maximus. Aliquam ornare purus 
-        turpis. Maecenas molestie libero id varius rutrum. Sed sollicitudin 
-        leo lorem, at rutrum sapien finibus non. Sed dolor nulla, pharetra ac 
-        est vitae, hendrerit vulputate lacus. Nulla feugiat sodales molestie. 
-        Aliquam erat volutpat. Curabitur sed pulvinar diam, id aliquet elit. 
-        Nulla venenatis, odio at maximus pretium, erat tortor congue ligula, 
-        vel faucibus nibh metus vel lacus. Nam sit amet est finibus, iaculis 
-        felis eu, venenatis metus. Integer eget augue feugiat, consequat velit 
-        pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
-		  </p>
-		  </div>
-		  
-		  <div class="relationship">
-		  <div class="left"> </div> <div class="right"> </div>
-		  <strong class="relation-name"> Character Name </strong> <br />
-		  <strong class="relation-type"> - relationship </strong>
-		  <p>
-		    Morbi id sapien varius, imperdiet felis in, viverra ipsum. Vestibulum 
-        iaculis sem a lectus luctus finibus. Aenean malesuada malesuada nunc, 
-        eget consequat odio aliquam a. Mauris finibus euismod nisi finibus 
-        luctus. Mauris maximus congue nibh et maximus. Aliquam ornare purus 
-        turpis. Maecenas molestie libero id varius rutrum. Sed sollicitudin 
-        leo lorem, at rutrum sapien finibus non. Sed dolor nulla, pharetra ac 
-        est vitae, hendrerit vulputate lacus. Nulla feugiat sodales molestie. 
-        Aliquam erat volutpat. Curabitur sed pulvinar diam, id aliquet elit. 
-        Nulla venenatis, odio at maximus pretium, erat tortor congue ligula, 
-        vel faucibus nibh metus vel lacus. Nam sit amet est finibus, iaculis 
-        felis eu, venenatis metus. Integer eget augue feugiat, consequat velit 
-        pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
-		  </p>
-		  </div>
-		  
-		  
 		</div>
 		
-		<!--- MISCELLANEOUS INFORMATION ------------------------------------------->
+		<!------------>
+		  
+    <div class="relationship">
+      <div class="left"> </div> <div class="right"> </div>
+		    <strong class="relation-name"> Character Name </strong> <br />
+		    <strong class="relation-type"> - relationship </strong>
+		  <p>
+		    Morbi id sapien varius, imperdiet felis in, viverra ipsum. Vestibulum 
+        iaculis sem a lectus luctus finibus. Aenean malesuada malesuada nunc, 
+        eget consequat odio aliquam a. Mauris finibus euismod nisi finibus 
+        luctus. Mauris maximus congue nibh et maximus. Aliquam ornare purus 
+        turpis. Maecenas molestie libero id varius rutrum. Sed sollicitudin 
+        leo lorem, at rutrum sapien finibus non. Sed dolor nulla, pharetra ac 
+        est vitae, hendrerit vulputate lacus. Nulla feugiat sodales molestie. 
+        Aliquam erat volutpat. Curabitur sed pulvinar diam, id aliquet elit. 
+        Nulla venenatis, odio at maximus pretium, erat tortor congue ligula, 
+        vel faucibus nibh metus vel lacus. Nam sit amet est finibus, iaculis 
+        felis eu, venenatis metus. Integer eget augue feugiat, consequat velit 
+        pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
+		  </p>
+		</div>
 		
-		<div id="tab-4" class="tab-content"> 
-		  <div class="misc">
-		<ul> <strong> Notes </strong>
-		  <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc 
-		    rhoncus sollicitudin augue malesuada lacinia. Aliquam eleifend ex quis 
-		    congue rhoncus. Praesent pharetra convallis sollicitudin. Vivamus non 
-		    libero eu libero posuere fermentum. Ut euismod, arcu viverra ultrices 
-		    hendrerit, dui diam tempus risus, vel consectetur erat dolor vitae 
-		    urna. Cum sociis natoque. </li>
-		  <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut 
-		    imperdiet tellus. Suspendisse malesuada tempor ligula sed facilisis. 
-		    Morbi egestas. </li>
-		  <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et 
-		    nisl et tortor cursus dignissim. Quisque consectetur non metus a 
-		    fermentum. Nulla at massa tincidunt, dictum augue a, venenatis dolor. 
-		    Curabitur gravida pretium orci, vel molestie sem accumsan non. In quis 
-		    placerat tellus. Vivamus ultrices et nunc sed malesuada. Maecenas eget 
-		    aliquet erat, non varius diam. Vestibulum ante ipsum primis in faucibus 
-		    orci luctus et ultrices posuere cubilia Curae; Praesent.</li>
-		  <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et metus 
-		    vestibulum, volutpat massa pretium, lacinia mi. Fusce dapibus quis leo 
-		    quis suscipit. Curabitur eu augue dignissim, pellentesque erat 
-		    dignissim. </li>
-		</ul>
+		<!------------>
+		
+    </div></div></li>
+    
+<!------------------------------------------------------- MISCELLANEOUS TAB ---> 
+    
+    <li>
+      <input type="radio" name="tabs" id="tab4" />
+      <label for="tab4" role="tab" aria-selected="false" aria-controls="panel4" 
+        tabindex="0"> Miscellaneous </label>
+      <div id="tab-content4" class="tab-content" role="tabpanel" 
+        aria-labelledby="miscellaneous" aria-hidden="true">
+        
+    <!------------>
+          
+    <div class="misc">
+      
+    <!------------>
+		
+		  <ul> <strong> Notes </strong>
+		    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc 
+		      rhoncus sollicitudin augue malesuada lacinia. Aliquam eleifend ex quis 
+		      congue rhoncus. Praesent pharetra convallis sollicitudin. Vivamus non 
+		      libero eu libero posuere fermentum. Ut euismod, arcu viverra ultrices 
+		      hendrerit, dui diam tempus risus, vel consectetur erat dolor vitae 
+		      urna. Cum sociis natoque. </li>
+		    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut 
+		      imperdiet tellus. Suspendisse malesuada tempor ligula sed facilisis. 
+		      Morbi egestas. </li>
+		    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et 
+		      nisl et tortor cursus dignissim. Quisque consectetur non metus a 
+		      fermentum. Nulla at massa tincidunt, dictum augue a, venenatis dolor. 
+		      Curabitur gravida pretium orci, vel molestie sem accumsan non. In quis 
+		      placerat tellus. Vivamus ultrices et nunc sed malesuada. Maecenas eget 
+		      aliquet erat, non varius diam. Vestibulum ante ipsum primis in faucibus 
+		      orci luctus et ultrices posuere cubilia Curae; Praesent.</li>
+		    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et metus 
+		      vestibulum, volutpat massa pretium, lacinia mi. Fusce dapibus quis leo 
+		      quis suscipit. Curabitur eu augue dignissim, pellentesque erat 
+		      dignissim. </li>
+	  	</ul>
+	  	
+	  <!------------>
 		    
-		    <div class="tropes-block">
+		  <div class="tropes-block">
 		      <strong> Tropes </strong>
-		      <a href="#"> Lorem </a>
-          <a href="#"> ipsum </a>
-          <a href="#"> dolor </a>
-          <a href="#"> sit </a>
-          <a href="#"> amet </a>
-          <a href="#"> consectetur </a>
-          <a href="#"> adipiscing  </a>
-          <a href="#"> elit </a>
-          <a href="#"> Lorem </a>
-          <a href="#"> ipsum </a>
-          <a href="#"> dolor </a>
-          <a href="#"> sit </a>
-          <a href="#"> amet </a>
-          <a href="#"> consectetur </a>
-          <a href="#"> adipiscing  </a>
-          <a href="#"> elit </a>
-		    </div>
+		    <a href="#"> Lorem </a>
+        <a href="#"> ipsum </a>
+        <a href="#"> dolor </a>
+        <a href="#"> sit </a>
+        <a href="#"> amet </a>
+        <a href="#"> consectetur </a>
+        <a href="#"> adipiscing  </a>
+        <a href="#"> elit </a>
+        <a href="#"> Lorem </a>
+        <a href="#"> ipsum </a>
+        <a href="#"> dolor </a>
+        <a href="#"> sit </a>
+        <a href="#"> amet </a>
+        <a href="#"> consectetur </a>
+        <a href="#"> adipiscing  </a>
+        <a href="#"> elit </a>
+		  </div>
+		    
+		<!------------>
 
 		  <div class="pinterest">
 		    <strong> Pinterest </strong> 
-		  <a href="https://www.pinterest.com/cherzooka/erinys/"
+		  <a href="https://www.pinterest.com/cherzooka/nou-tao/"
 		    data-pin-do="embedBoard" 
-		    data-pin-board-width="50" 
+		    data-pin-board-width="130" 
 		    data-pin-scale-height="300" 
 		    data-pin-scale-width="10"></a>
-		  </div></div>
-		</div>
+		  </div>
+		</div></div></li>
 		
-		<!------------------------------------------------------------------------->
-		
-  </div>
-</div>
+<!----------------------------------------------------------------- CLOSING ---> 
+
+</ul>
+
+  <br style="clear: both;" />
 
 </div>

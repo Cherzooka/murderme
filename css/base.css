@@ -1037,16 +1037,17 @@
   margin-top: 0;
   line-height: 22px;
   padding-left: 60px;
+  font-size: 15px;
   font-family: 'Muli', sans-serif;
   width: 375px;
 }
 
-/* line 213, ../scss/_profile.scss */
+/* line 214, ../scss/_profile.scss */
 .relationship strong {
   text-align: left;
 }
 
-/* line 217, ../scss/_profile.scss */
+/* line 218, ../scss/_profile.scss */
 .relationship .relation-name {
   font-size: 35px;
   font-family: 'Alex Brush', cursive;
@@ -1056,7 +1057,7 @@
   z-index: 99;
 }
 
-/* line 226, ../scss/_profile.scss */
+/* line 227, ../scss/_profile.scss */
 .relationship .relation-type {
   width: 100%;
   font-size: 25px;
@@ -1065,7 +1066,7 @@
   margin-top: -20px;
 }
 
-/* line 234, ../scss/_profile.scss */
+/* line 235, ../scss/_profile.scss */
 .relationship .left {
   width: 50px;
   border: 2px solid white;
@@ -1075,7 +1076,7 @@
   z-index: 9;
 }
 
-/* line 243, ../scss/_profile.scss */
+/* line 244, ../scss/_profile.scss */
 .relationship .right {
   width: 50px;
   border: 2px solid white;
@@ -1085,7 +1086,7 @@
   z-index: 9;
 }
 
-/* line 252, ../scss/_profile.scss */
+/* line 253, ../scss/_profile.scss */
 #music-tab {
   width: 20px;
   display: inline-block;
@@ -1099,7 +1100,7 @@
   transition: linear 0.5s;
 }
 
-/* line 261, ../scss/_profile.scss */
+/* line 262, ../scss/_profile.scss */
 #music {
   display: inline-block;
   margin-left: 20px;
@@ -1113,7 +1114,7 @@
   transition: linear 0.5s;
 }
 
-/* line 270, ../scss/_profile.scss */
+/* line 271, ../scss/_profile.scss */
 #player {
   border: 5px solid white;
   background: white;
@@ -1131,7 +1132,7 @@
   transition: linear 0.5s;
 }
 
-/* line 283, ../scss/_profile.scss */
+/* line 284, ../scss/_profile.scss */
 #music-label {
   width: 20px;
   top: 30px;
@@ -1140,26 +1141,26 @@
   position: absolute;
 }
 
-/* line 291, ../scss/_profile.scss */
+/* line 292, ../scss/_profile.scss */
 .music-button-close, .music-button-open {
   top: 30px;
   left: 0;
   position: absolute;
 }
 
-/* line 297, ../scss/_profile.scss */
+/* line 298, ../scss/_profile.scss */
 .music-button-close {
   display: none;
 }
 
-/* line 301, ../scss/_profile.scss */
+/* line 302, ../scss/_profile.scss */
 .misc {
   text-align: center;
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 307, ../scss/_profile.scss */
+/* line 308, ../scss/_profile.scss */
 .misc ul {
   text-align: left;
   display: inline-block;
@@ -1170,14 +1171,13 @@
   margin: 0 50px;
 }
 
-/* line 317, ../scss/_profile.scss */
+/* line 318, ../scss/_profile.scss */
 .misc li {
   margin: 5px 50px;
 }
 
-/* line 321, ../scss/_profile.scss */
+/* line 322, ../scss/_profile.scss */
 .tropes-block {
-  display: inline-block;
   border-top: 2px solid white;
   padding: 25px 0;
   border-radius: 5px;
@@ -1219,6 +1219,12 @@
 }
 
 /* line 352, ../scss/_profile.scss */
+.tropes-block strong {
+  margin-left: 50px;
+  position: relative;
+}
+
+/* line 357, ../scss/_profile.scss */
 .tropes-block a:hover {
   color: #666666;
   background: #efebea;
@@ -1229,7 +1235,7 @@
   transition: linear 0.3s;
 }
 
-/* line 358, ../scss/_profile.scss */
+/* line 363, ../scss/_profile.scss */
 .pinterest {
   border-top: 2px solid white;
   margin: 0 50px;
@@ -1237,23 +1243,23 @@
   padding-top: 25px;
 }
 
-/* line 365, ../scss/_profile.scss */
+/* line 370, ../scss/_profile.scss */
 .pinterest strong {
   margin-left: 50px;
   position: relative;
 }
 
-/* line 370, ../scss/_profile.scss */
+/* line 375, ../scss/_profile.scss */
 div.pinterest > span > span:first-child {
   display: none !important;
 }
 
-/* line 374, ../scss/_profile.scss */
+/* line 379, ../scss/_profile.scss */
 .div.pinterest > span > span:last-child {
   display: none;
 }
 
-/* line 378, ../scss/_profile.scss */
+/* line 383, ../scss/_profile.scss */
 div.pinterest > span {
   box-shadow: 0 0 0 transparent !important;
   background: transparent none !important;
@@ -1609,12 +1615,17 @@ h3 {
   bottom: 10px;
   position: fixed;
   left: 0;
+  -webkit-transition: linear 0.5s;
+  -moz-transition: linear 0.5s;
+  -ms-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
 }
-/* line 57, ../scss/_tabs.scss */
+/* line 58, ../scss/_tabs.scss */
 .tabs [id^="tab"]:checked + label {
   background-color: white;
 }
-/* line 60, ../scss/_tabs.scss */
+/* line 61, ../scss/_tabs.scss */
 .tabs [id^="tab"]:checked ~ [id^="tab-content"] {
   display: block;
 }
