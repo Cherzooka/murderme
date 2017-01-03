@@ -1,73 +1,63 @@
-
-.tabs-menu {
-  clear: both;
-  display: inline-block;
-  position: fixed;
-  top: 80px;
-  float: left;
+.tabs {
+  float: none;
   list-style: none;
-  width: 100%;
-}
-
-.tabs-menu:after {
-  display: block;
-  clear: both;
-  content: '';
-}
-
-.tabs-menu li {
-  margin: 0px 5px -1px 5px;
-  float: left;
-  list-style: none;
-}
-
-.tabs-menu li a {
-  padding: 2px;
-  color: $fontcolor;
-  font-family: 'Muli', sans-serif;
-  font-size: 15px;
-  padding-right: 20px;
-  padding-left: 30px;
-  text-decoration: none;
-  text-align: right;
-  display: inline-block;
-  margin-bottom: 1px;
-  background-color: $backgroundcolor;
-  border: 2px solid $bordercolor;
-  border-bottom: 0;
-  border-radius: 10px 10px 0 0;
-  @include user-select(none)
-  @include transition(linear .3s)
-}
-
-.tabs-menu .current a {
-  background-color: $bordercolor;
-}
-
-#profile {
-  margin-left: 52px;
-  margin-right: 460px;
-  border: 2px solid $bordercolor;
-  border-radius: 5px;
-  top: 121px;
-  bottom: 10px;
-  position: fixed;
-  overflow-x: scroll;
-  background: $backgroundcolor;
-  @include transition(linear .5s)
-}
-
-.tab {
-  border: 2px solid transparent;
-  color: $fontcolor;
-  @include transition(linear .3s)
-}
-
-.tab-content {
-  display: none;
-  padding: 20px;
-}
-
-#tab-1 {
-  display: block;
+  text-align: left;
+  li {
+    float: left;
+    display: block;
+  }
+  input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+  }
+  label {
+    display: block;
+    padding: 2px;
+    padding-right: 20px;
+    padding-left: 30px;
+    border-radius: 2px 2px 0 0;
+    font-size: 15px;
+    font-family: 'Muli', sans-serif;
+    background-color: $backgroundcolor;
+    cursor: pointer;
+    color: $fontcolor;
+    border: 2px solid $bordercolor;
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin-top: 80px;
+    margin-left: 15px;
+    outline: 0;
+    @include transition(all 0.3s ease-in-out);
+    @include user-select(none);
+    &:hover {
+      background-color: $bordercolor;
+    }
+  }
+  .tab-content{
+    z-index: 2;
+    display: none; 
+    overflow-x: scroll;
+    font-family: 'Muli', sans-serif;
+    font-size: 17px;
+    padding: 25px;  
+    margin-left: 60px;
+    color: $fontcolor;
+    margin-right: 460px;
+    border: 2px solid $bordercolor;
+    background-color: $backgroundcolor;
+    border-radius: 5px;
+    top: 121px;
+    bottom: 10px;
+    position: fixed;
+    left: 0; 
+  }
+  //The Magic
+  [id^="tab"]:checked + label { 
+    background-color: $bordercolor;
+  }
+  [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+  }
 }

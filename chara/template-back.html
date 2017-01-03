@@ -1,32 +1,49 @@
 <div id="profile" class="erinys">  
-  <strong class="character-header"> Character Name </strong>
-  
-<!---------- TABS CONTENT --->
 
-  <ul class="tabs" role="tablist">
-  
-<!------------ BASICS TAB --->
-    <li>
-      <input type="radio" name="tabs" id="tab1" checked />
-      <label for="tab1" role="tab" aria-selected="true" aria-controls="panel1" 
-        tabindex="0" style="margin-left: 50px;"> Basics </label>
-      <div id="tab-content1" class="tab-content" role="tabpanel" 
-        aria-labelledby="basics" aria-hidden="false">
-  
-      <div class="tag-block"> <ul> 
-				<li> <i class="fa fa-tag" aria-hidden="true"></i> 
-				  <b>Time Period:</b> time period </li> 
-				<li> <i class="fa fa-tag" aria-hidden="true"></i> 
-				  <b>Gender:</b> gender </li> 
-				<li> <i class="fa fa-tag" aria-hidden="true"></i> 
-				  <b>Player:</b> player </li> 
-				<li> <i class="fa fa-tag" aria-hidden="true"></i> 
-				  <b>Species:</b> species </li> 
-				<li> <i class="fa fa-tag" aria-hidden="true"></i> 
-				  <b>Sub-Species:</b> sub species </li> 
-			 </ul> <hr /> </div>
-			  
-		  <strong class="intro"> Introduction </strong>
+  <div id="player">
+    <div id="music">
+    <iframe src="https://embed.spotify.com/?uri=spotify:user:1258989623:playlist:7jc7Xg6XN4fi0UugBtqEWB" 
+		  width="280" 
+		  height="80" 
+		  frameborder="0" 
+		  allowtransparency="true"></iframe></div>
+		  
+		<div id="music-tab"> 
+      <span class="music-button-open" onclick="openMusic()">
+        <i class="fa fa-angle-double-left" aria-hidden="true"></i></span>
+      <span class="music-button-close" onclick="closeMusic()">
+        <i class="fa fa-angle-double-right" aria-hidden="true"></i></span>
+      </div>
+      
+      <div id="music-label"><i class="fa fa-music" aria-hidden="true"></i></div>
+	</div>
+
+  <strong class="character-header"> Character Name </strong>
+
+    <ul class="tabs-menu"> 
+      <li class="current"><a href="#tab-1"> Basics </a></li>
+      <li><a href="#tab-2"> Biography </a></li>
+      <li><a href="#tab-3"> Relationships </a></li>
+      <li><a href="#tab-4"> Miscellaneous </a></li>
+    </ul>
+    
+<!--- TABS CONTENT START ------------------------------------------------------>
+
+  <div id="tabs-container">
+	<div class="tab">
+	  
+	  <!--- BASIC INFORMATION --------------------------------------------------->
+	  
+		<div id="tab-1" class="tab-content"> 
+	    <div class="tag-block"> <ul> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Time Period:</b> time period </li> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Gender:</b> gender </li> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Player:</b> player </li> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Species:</b> species </li> 
+				<li> <i class="fa fa-tag" aria-hidden="true"></i> <b>Sub-Species:</b> sub species </li> 
+			</ul> <hr /> </div>
+			
+			<strong class="intro"> Introduction </strong>
 			<p class="intro-blurb"> 
 			  Lorem ipsum dolor sit amet, consectetur adipiscing 
 			  elit. Curabitur at magna dignissim, maximus nisi sit amet, ornare 
@@ -53,7 +70,7 @@
         pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
       </p>
       
-      <ul class="info"> 
+	    <ul class="info"> 
 	      <li> <hr /> <b>Full Name:</b> Full Character Name </li>
 	      <li> <hr /> <b>Nicknames:</b> Any Nicknames, or Aliases they've used. </li>
 	      <li> <hr /> <b>Life Span:</b> Birth Date - Death Date </li>
@@ -93,15 +110,13 @@
 	      <li> <hr /> <b>Height:</b> Height </li>
 	      <li> <hr /> <b>Color:</b> <span class="stripe"> ____________ </span> #000000 </li>
 	      </ul>
-			  
-        </div></li>
-<!------------ BIOGRAPHY TAB --->
-    <li>
-        <input type="radio" name="tabs" id="tab2" /><label for="tab2" role="tab" aria-selected="false" aria-controls="panel2" 
-          tabindex="0"> Biography </label>
-        <div id="tab-content2" class="tab-content" role="tabpanel" aria-labelledby="biographyc" aria-hidden="true">
-          
-          <div class="biography-category">
+	  </div>
+	  
+	  <!--- BIOGRAPHY INFORMATION ----------------------------------------------->
+	  
+		<div id="tab-2" class="tab-content"> 
+		<div class="biography">
+		  <div class="biography-category">
 		  <strong class="bio-header"> Childhood </strong> <br /> <br />
 		  <p>
 		    Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -182,18 +197,14 @@
         pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
 		  </p>
 		  </div>
-        </div>
-    </li>
-    
-    
-    
-    <li>
-        <input type="radio" name="tabs" id="tab3" /><label for="tab3" role="tab" aria-selected="false" aria-controls="panel3" 
-          tabindex="0"> Relationships </label>
-        <div id="tab-content3" class="tab-content" role="tabpanel" aria-labelledby="relationships" aria-hidden="true">
-          
-          <div class="relationships">
-            <div class="relationship"> 
+		  </div>
+		</div>
+		
+		<!--- RELATIONSHIPS INFORMATION ------------------------------------------->
+		
+		<div id="tab-3" class="tab-content relationships">
+		  
+		  <div class="relationship"> 
 		  <div class="left"> </div> <div class="right"> </div>
 		  <strong class="relation-name"> Character Name </strong> <br />
 		  <strong class="relation-type"> - relationship </strong>
@@ -252,18 +263,14 @@
         pharetra, tincidunt purus. Ut aliquam aliquet mauris non volutpat. 
 		  </p>
 		  </div>
-          </div>
-        </div>
-    </li>
-    
-    
-    
-        <li>
-        <input type="radio" name="tabs" id="tab4" /><label for="tab4" role="tab" aria-selected="false" aria-controls="panel4" 
-          tabindex="0"> Miscellaneous </label>
-        <div id="tab-content4" class="tab-content" role="tabpanel" aria-labelledby="miscellaneous" aria-hidden="true">
-          
-          		  <div class="misc">
+		  
+		  
+		</div>
+		
+		<!--- MISCELLANEOUS INFORMATION ------------------------------------------->
+		
+		<div id="tab-4" class="tab-content"> 
+		  <div class="misc">
 		<ul> <strong> Notes </strong>
 		  <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc 
 		    rhoncus sollicitudin augue malesuada lacinia. Aliquam eleifend ex quis 
@@ -315,11 +322,11 @@
 		    data-pin-scale-height="300" 
 		    data-pin-scale-width="10"></a>
 		  </div></div>
-        </div>
-    </li>
-    
-</ul>
-
-<br style="clear: both;" />
+		</div>
+		
+		<!------------------------------------------------------------------------->
+		
+  </div>
+</div>
 
 </div>

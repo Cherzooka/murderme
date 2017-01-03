@@ -1,1 +1,1620 @@
-.filters button{display:inline-block;margin-right:4px;padding:1px 5px;outline:none;border:2px solid transparent;border-radius:5px;background:transparent;font-family:'Muli', sans-serif;color:#666;text-align:left;-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-ms-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;transition:all 0.3s ease-out}.filters hr{margin-top:1px;background-color:#fff;border-radius:50px;width:300px;border:none;height:2px;margin-left:100px}.button:active,.button.is-checked{color:#fff;border:2px solid transparent;padding:1px 5px;border-radius:5px}.button:hover{background:#bbb;border:2px solid #fff;border-radius:5px;color:#fff;padding:1px 5px}.button.is-checked:hover{background:#bbb;border:2px solid #fff;border-radius:5px;color:#666;padding:1px 5px}.button-group{display:inline-block;margin:0 5px 5px 0;margin-left:80px}.filters{width:400px;margin:0 20px;margin-top:20px;overflow:hidden}.character{width:400px;margin:5px 25px;background-color:#aaa;padding:10px;padding-bottom:0;text-align:left;border:2px solid #fff;border-radius:5px;z-index:-1;outline:0}.character:after{display:block;clear:both;content:''}.character-name{font-family:'Felipa', cursive;font-size:20px;letter-spacing:2px;z-index:2}.character::first-letter{font-family:'Alex Brush', cursive;font-size:40px;font-weight:900;float:left;margin-right:2px;margin-top:-10px}.character ul{display:inline-block;font-family:'Muli', sans-serif;font-size:12px;margin-top:5px;margin-bottom:5px;width:300px;margin-left:-20px;z-index:2;vertical-align:middle}.character li{display:inline-block;background-color:#e4dddc;padding:3px 7px;margin:1px;border-radius:5px;max-width:250px;z-index:2;border:2px solid #aaa}.character-select{overflow:scroll;height:100%}#chara-select{padding-bottom:100px;overflow:scroll}#chara-select button{z-index:1}.character .stripe{width:350px;position:absolute;height:100%;top:0;right:20px;border-right:2px solid #fff;border-left:2px solid #fff;z-index:-1}.character .whitestripe{z-index:-1;background-color:#fff;position:absolute;width:100%;height:16px;top:14px;left:0}.template{display:none}.aditi b,.aditi strong,.aditi i{color:#732A25}.aditi .stripe{background-color:#732A25}.alvar b,.alvar strong,.alvar i{color:#6748A8}.alvar .stripe{background-color:#6748A8}.ananta b,.ananta strong,.ananta i{color:#A3D6A3}.ananta .stripe{background-color:#A3D6A3}.aslan b,.aslan strong,.aslan i{color:#6E1287}.aslan .stripe{background-color:#6E1287}.aste b,.aste strong,.aste i{color:#5883AD}.aste .stripe{background-color:#5883AD}.deryn b,.deryn strong,.deryn i{color:#CADCDE}.deryn .stripe{background-color:#CADCDE}.erinys b,.erinys strong,.erinys i{color:#9A79A6}.erinys .stripe{background-color:#9A79A6}.felix b,.felix strong,.felix i{color:#326E40}.felix .stripe{background-color:#326E40}.hashur b,.hashur strong,.hashur i{color:#DBD088}.hashur .stripe{background-color:#DBD088}.jayashri b,.jayashri strong,.jayashri i{color:#3d1e1a}.jayashri .stripe{background-color:#3d1e1a}.kiran b,.kiran strong,.kiran i{color:#C35617}.kiran .stripe{background-color:#C35617}.kuliana b,.kuliana strong,.kuliana i{color:#6B442A}.kuliana .stripe{background-color:#6B442A}.lilim b,.lilim strong,.lilim i{color:#BF5CB9}.lilim .stripe{background-color:#BF5CB9}.machlah b,.machlah strong,.machlah i{color:#bf9731}.machlah .stripe{background-color:#bf9731}.martina b,.martina strong,.martina i{color:#4762AD}.martina .stripe{background-color:#4762AD}.reuben b,.reuben strong,.reuben i{color:#AD6D18}.reuben .stripe{background-color:#AD6D18}.shae b,.shae strong,.shae i{color:#993629}.shae .stripe{background-color:#993629}.sheona b,.sheona strong,.sheona i{color:#0d345b}.sheona .stripe{background-color:#0d345b}.siorus b,.siorus strong,.siorus i{color:#BA6156}.siorus .stripe{background-color:#BA6156}.skane b,.skane strong,.skane i{color:#732F3B}.skane .stripe{background-color:#732F3B}.taiji b,.taiji strong,.taiji i{color:#1D98A8}.taiji .stripe{background-color:#1D98A8}.thanh b,.thanh strong,.thanh i{color:#3843BA}.thanh .stripe{background-color:#3843BA}.xiphos b,.xiphos strong,.xiphos i{color:#6EEAB3}.xiphos.character::first-letter{padding-left:6px}.xiphos .stripe{background-color:#6EEAB3}.yeoncho b,.yeoncho strong,.yeoncho i{color:#9b397a}.yeoncho .stripe{background-color:#9b397a}.yeonjun b,.yeonjun strong,.yeonjun i{color:#367875}.yeonjun .stripe{background-color:#367875}.riley b,.riley strong,.riley i{color:#5f773e}.riley .stripe{background-color:#5f773e}.adalia b,.adalia strong,.adalia i{color:#000}.adalia .stripe{background-color:#000}.aed b,.aed strong,.aed i{color:#000}.aed .stripe{background-color:#000}.alex b,.alex strong,.alex i{color:#000}.alex .stripe{background-color:#000}.artavus b,.artavus strong,.artavus i{color:#000}.artavus .stripe{background-color:#000}.asher b,.asher strong,.asher i{color:#000}.asher .stripe{background-color:#000}.august b,.august strong,.august i{color:#000}.august .stripe{background-color:#000}.bast b,.bast strong,.bast i{color:#000}.bast .stripe{background-color:#000}.moroi b,.moroi strong,.moroi i{color:#000}.moroi .stripe{background-color:#000}.ekat b,.ekat strong,.ekat i{color:#000}.ekat .stripe{background-color:#000}.elias b,.elias strong,.elias i{color:#000}.elias .stripe{background-color:#000}.erish b,.erish strong,.erish i{color:#000}.erish .stripe{background-color:#000}.freya b,.freya strong,.freya i{color:#000}.freya .stripe{background-color:#000}.ines b,.ines strong,.ines i{color:#000}.ines .stripe{background-color:#000}.kalis b,.kalis strong,.kalis i{color:#000}.kalis .stripe{background-color:#000}.leo b,.leo strong,.leo i{color:#000}.leo .stripe{background-color:#000}.maks b,.maks strong,.maks i{color:#000}.maks .stripe{background-color:#000}.nico b,.nico strong,.nico i{color:#000}.nico .stripe{background-color:#000}.noah b,.noah strong,.noah i{color:#000}.noah .stripe{background-color:#000}.olivia b,.olivia strong,.olivia i{color:#000}.olivia .stripe{background-color:#000}.simon b,.simon strong,.simon i{color:#000}.simon .stripe{background-color:#000}.toby b,.toby strong,.toby i{color:#000}.toby .stripe{background-color:#000}.oz b,.oz strong,.oz i{color:#000}.oz .stripe{background-color:#000}.flynn b,.flynn strong,.flynn i{color:#000}.flynn .stripe{background-color:#000}.jude b,.jude strong,.jude i{color:#000}.jude .stripe{background-color:#000}.azza b,.azza strong,.azza i{color:#000}.azza .stripe{background-color:#000}.evren b,.evren strong,.evren i{color:#5040b1}.evren .stripe{background-color:#5040b1}.israa b,.israa strong,.israa i{color:#000}.israa .stripe{background-color:#000}.thren b,.thren strong,.thren i{color:#000}.thren .stripe{background-color:#000}.gresh b,.gresh strong,.gresh i{color:#000}.gresh .stripe{background-color:#000}.calanthe b,.calanthe strong,.calanthe i{color:#de87ba}.calanthe .stripe{background-color:#de87ba}.levent b,.levent strong,.levent i{color:#24ad95}.levent .stripe{background-color:#24ad95}.orhan b,.orhan strong,.orhan i{color:#3c47c1}.orhan .stripe{background-color:#3c47c1}.nereus b,.nereus strong,.nereus i{color:#377a82}.nereus .stripe{background-color:#377a82}.nou b,.nou strong,.nou i{color:#a81963}.nou .stripe{background-color:#a81963}.character-header{font-size:50px;font-family:'Alex Brush', cursive;letter-spacing:2px;position:fixed;top:20px;margin-left:25px;cursor:default;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.character-header::first-letter{font-size:90px;font-weight:900;float:left;margin-right:-2px;margin-top:-20px}.tab-stripe{background:red;height:100px;width:100%;z-index:-999;bottom:0;right:0;margin-bottom:-20px;position:fixed;border:2px solid white;-ms-transform:rotate(-40deg);-webkit-transform:rotate(-40deg);transform:rotate(-40deg)}.info{text-align:left;list-style:none;display:inline-block;float:left;width:45%;font-family:'Muli', sans-serif}.info li{border-top:2px solid #fff;border-radius:5px;display:inline-block;padding:5px 10px;margin:5px;width:95%;text-align:right;vertical-align:middle}.info button{background:transparent;border:0;color:#666;font-size:15px;font-family:'Muli', sans-serif;padding:0;outline:none;cursor:pointer;border-bottom:2px solid #fff}.info hr{margin-top:1px;background-color:#fff;border:none;position:absolute;height:2px;margin-top:5px;z-index:-1}.info b{font-size:20px;float:left;padding-right:50px}.tag-block ul{display:inline-block;font-family:'Muli', sans-serif;bottom:0;left:0;font-size:12px;margin-top:-8px;z-index:2;text-align:center;cursor:default;vertical-align:middle;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.tag-block li{display:inline-block;background-color:#e4dddc;padding:3px 7px;margin:1px;border-radius:5px;z-index:2;border:2px solid #fff}.tag-block hr{margin-top:1px;background-color:#fff;border-radius:40px;border:none;height:2px}.tag-block i{font-size:15px;margin-right:5px}.intro{float:right;right:0;right:100px;font-family:'Alex Brush', cursive;letter-spacing:2px;font-size:50px;margin-bottom:10px;display:inline-block;position:absolute;cursor:default;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.intro-blurb{float:right;width:45%;margin-top:50px;font-size:15px;font-family:'Muli', sans-serif;margin-right:10px;display:inline-block}.info .stripe{height:10px;width:100px;text-align:right;margin-right:10px;color:transparent;border-left:3px solid #fff;border-right:3px solid #fff;border-top:1px solid #fff;border-bottom:1px solid #fff;border-radius:50px;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.biography{padding:0 50px}.biography-category{border-top:2px solid #fff;border-radius:5px;padding:0 50px;padding-bottom:25px;margin-top:15px}.biography p{text-indent:20px;margin-top:0;font-family:'Muli', sans-serif;line-height:25px}.bio-header{font-size:50px;font-family:'Alex Brush', cursive;margin-top:-30px;padding-left:50px;float:left;cursor:default;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.relationships{text-align:center}.relationship{display:inline-block;padding:25px;width:500px;margin:auto;min-height:275px;vertical-align:middle}.relationship p{text-align:justify;margin-top:0;line-height:22px;padding-left:60px;font-family:'Muli', sans-serif;width:375px}.relationship strong{text-align:left}.relationship .relation-name{font-size:35px;font-family:'Alex Brush', cursive;margin-left:-220px;margin-top:25px;margin-bottom:-20px;z-index:99}.relationship .relation-type{width:100%;font-size:25px;font-family:'Alex Brush', cursive;margin-left:-250px;margin-top:-20px}.relationship .left{width:50px;border:2px solid #fff;float:left;height:250px;border-radius:50px 5px 5px 50px;z-index:9}.relationship .right{width:50px;border:2px solid #fff;float:right;height:250px;border-radius:5px 50px 50px 5px;z-index:9}#music-tab{width:20px;display:inline-block;position:absolute;vertical-align:middle;text-align:center;-webkit-transition:linear 0.5s;-moz-transition:linear 0.5s;-ms-transition:linear 0.5s;-o-transition:linear 0.5s;transition:linear 0.5s}#music{display:inline-block;margin-left:20px;position:fixed;width:0;overflow:hidden;-webkit-transition:linear 0.5s;-moz-transition:linear 0.5s;-ms-transition:linear 0.5s;-o-transition:linear 0.5s;transition:linear 0.5s}#player{border:5px solid #fff;background:#fff;border-radius:5px;top:3px;width:40px;height:80px;right:500px;position:fixed;z-index:99999;-webkit-transition:linear 0.5s;-moz-transition:linear 0.5s;-ms-transition:linear 0.5s;-o-transition:linear 0.5s;transition:linear 0.5s}#music-label{width:20px;top:30px;right:-5px;color:black;position:absolute}.music-button-close,.music-button-open{top:30px;left:0;position:absolute}.music-button-close{display:none}.misc{text-align:center;display:inline-block;vertical-align:middle}.misc ul{text-align:left;display:inline-block;font-family:'Muli', sans-serif;border-top:2px solid #fff;border-radius:5px;padding-top:23px;margin:0 50px}.misc li{margin:5px 50px}.tropes-block{display:inline-block;border-top:2px solid #fff;padding:25px 0;border-radius:5px;margin:25px 50px}.misc strong{float:left;position:absolute;font-family:'Alex Brush', cursive;font-size:35px;margin-top:-45px;cursor:default;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}.tropes-block a{cursor:pointer;color:#666;background:#fff;padding:1px 20px;border-radius:5px;font-family:'Muli', sans-serif;display:inline-block;text-decoration:none;margin-top:5px;-webkit-transition:linear 0.3s;-moz-transition:linear 0.3s;-ms-transition:linear 0.3s;-o-transition:linear 0.3s;transition:linear 0.3s}.tropes-block a:hover{color:#666;background:#efebea;-webkit-transition:linear 0.3s;-moz-transition:linear 0.3s;-ms-transition:linear 0.3s;-o-transition:linear 0.3s;transition:linear 0.3s}.pinterest{border-top:2px solid #fff;margin:0 50px;border-radius:5px;padding-top:25px}.pinterest strong{margin-left:50px;position:relative}div.pinterest>span>span:first-child{display:none !important}.div.pinterest>span>span:last-child{display:none}div.pinterest>span{box-shadow:0 0 0 transparent !important;background:transparent none !important;padding:0 !important;margin:0}#s-m-t-tooltip{max-width:300px;z-index:10;margin:24px 14px 7px 12px;padding:8px;background:#e4dddc;font-size:12px;color:#666;font-family:'Muli', sans-serif;border:2px solid #fff;border-radius:10px}::-webkit-scrollbar{width:5px;height:10px}::-webkit-scrollbar-thumb{background:#fff;border-radius:50px}::-webkit-scrollbar-track{background:transparent}body{background:url("img/gplay.png");background-color:#e4dddc}b{font-family:'Felipa', cursive;font-size:16px;letter-spacing:2px;z-index:2;text-shadow:-1px 0 #fff,0 1px #fff,1px 0 #fff,0 -1px #fff}strong{text-shadow:-2px 1px #fff,-1px 2px #fff,2px -1px #fff,1px -2px #fff}#loading{position:fixed;left:0px;top:0px;width:100%;height:100%;z-index:99999999;background:url("http://i.giphy.com/xTk9ZvMnbIiIew7IpW.gif") 50% 50% no-repeat #e5eff1;background-size:350px}#profile-loading{display:none;position:fixed;background-image:url("img/spin.gif");z-index:9999;left:40%;top:40%;height:100px;width:100px}h2{float:right;margin-top:-28px;margin-bottom:-30px;font-size:40px;padding-left:200px;text-align:right;font-family:'Alex Brush', cursive;text-shadow:-1px 0 #fff,0 1px #fff,1px 0 #fff,0 -1px #fff}h3{display:inline-block;margin:0;margin-right:5px;margin-left:-75px;padding:0;padding-right:10px;border-right:2px solid #fff;font-size:13pt;font-family:'Felipa', cursive;width:75px;text-align:right;text-shadow:-1px 0 #fff,0 1px #fff,1px 0 #fff,0 -1px #fff}.test-button{height:50px;width:50px;display:inline-block;background-color:red;display:none}.ui-widget-content{background:#e4dddc;border:2px solid #fff;color:#666}.ui-dialog .ui-dialog-titlebar{background:transparent;border:0}.ui-dialog .ui-dialog-title{font-family:'Alex Brush', cursive;font-size:30px;color:#666;border-bottom:2px solid #fff;text-shadow:-1px 0 #fff,0 1px #fff,1px 0 #fff,0 -1px #fff}.ui-dialog .ui-dialog-titlebar-close{top:30%;margin:-10px 0 0 0;outline:none;border:0;background:white}.ui-dialog .ui-dialog-content{background:#e4dddc;font-family:'Muli', sans-serif;font-size:14px;border:0}#left-side-bar{height:100%;width:50px;background-color:#bbb;float:left;position:fixed;top:0;left:0;border-right:2px solid #fff}#right-side-bar{height:100%;width:450px;background-color:#bbb;float:left;position:fixed;right:0;top:0;border-left:2px solid #fff;-webkit-transition:linear 0.5s;-moz-transition:linear 0.5s;-ms-transition:linear 0.5s;-o-transition:linear 0.5s;transition:linear 0.5s}#right-bar-sorting-container{background-color:#aaa;width:100%;height:0;position:fixed;overflow-x:hidden;z-index:3;top:0;-webkit-transition:linear 0.5s;-moz-transition:linear 0.5s;-ms-transition:linear 0.5s;-o-transition:linear 0.5s;transition:linear 0.5s}#right-bar-characters{height:100%;-webkit-transition:linear 0.5s;-moz-transition:linear 0.5s;-ms-transition:linear 0.5s;-o-transition:linear 0.5s;transition:linear 0.5s}#slide-button{background-color:#aaa;border-radius:0 0 5px 5px;height:20px;box-shadow:0 0 0 2px #fff;-webkit-transition:linear 0.5s;-moz-transition:linear 0.5s;-ms-transition:linear 0.5s;-o-transition:linear 0.5s;transition:linear 0.5s}#slide-button span{margin-left:225px;z-index:9}#slide-button i{font-size:25px;margin-top:5px;color:white;z-index:9}#triangle{height:0px;width:10px;border:20px solid #aaa;border-radius:100%;border-color:#aaa transparent transparent transparent;border-width:29px 12px 0px 12px;float:left;margin-left:216px;margin-top:-17px}.slide-button-close{display:none}.open-filters,.close-filters{position:absolute;top:10px;left:10px;font-size:30px;color:#fff}.close-filters{display:none}.tabs-menu{clear:both;display:inline-block;position:fixed;top:80px;float:left;list-style:none;width:100%}.tabs-menu:after{display:block;clear:both;content:''}.tabs-menu li{margin:0px 5px -1px 5px;float:left;list-style:none}.tabs-menu li a{padding:2px;color:#666;font-family:'Muli', sans-serif;font-size:15px;padding-right:20px;padding-left:30px;text-decoration:none;text-align:right;display:inline-block;margin-bottom:1px;background-color:#e4dddc;border:2px solid #fff;border-bottom:0;border-radius:10px 10px 0 0;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none;-webkit-transition:linear 0.3s;-moz-transition:linear 0.3s;-ms-transition:linear 0.3s;-o-transition:linear 0.3s;transition:linear 0.3s}.tabs-menu .current a{background-color:#fff}#profile{margin-left:52px;margin-right:460px;border:2px solid #fff;border-radius:5px;top:121px;bottom:10px;position:fixed;overflow-x:scroll;background:#e4dddc;-webkit-transition:linear 0.5s;-moz-transition:linear 0.5s;-ms-transition:linear 0.5s;-o-transition:linear 0.5s;transition:linear 0.5s}.tab{border:2px solid transparent;color:#666;-webkit-transition:linear 0.3s;-moz-transition:linear 0.3s;-ms-transition:linear 0.3s;-o-transition:linear 0.3s;transition:linear 0.3s}.tab-content{display:none;padding:20px}#tab-1{display:block}
+/* line 1, ../scss/_sorting.scss */
+.filters button {
+  display: inline-block;
+  margin-right: 4px;
+  padding: 1px 5px;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background: transparent;
+  font-family: 'Muli', sans-serif;
+  color: #666666;
+  text-align: left;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 15, ../scss/_sorting.scss */
+.filters hr {
+  margin-top: 1px;
+  background-color: white;
+  border-radius: 50px;
+  width: 300px;
+  border: none;
+  height: 2px;
+  margin-left: 100px;
+}
+
+/* line 25, ../scss/_sorting.scss */
+.button:active, .button.is-checked {
+  color: white;
+  border: 2px solid transparent;
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+
+/* line 32, ../scss/_sorting.scss */
+.button:hover {
+  background: #bbbbbb;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 1px 5px;
+}
+
+/* line 40, ../scss/_sorting.scss */
+.button.is-checked:hover {
+  background: #bbbbbb;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: #666666;
+  padding: 1px 5px;
+}
+
+/* line 48, ../scss/_sorting.scss */
+.button-group {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  margin-left: 80px;
+}
+
+/* line 54, ../scss/_sorting.scss */
+.filters {
+  width: 400px;
+  margin: 0 20px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* line 1, ../scss/_character-select.scss */
+.character {
+  width: 400px;
+  margin: 5px 25px;
+  background-color: #aaaaaa;
+  padding: 10px;
+  padding-bottom: 0;
+  text-align: left;
+  border: 2px solid white;
+  border-radius: 5px;
+  z-index: -1;
+  outline: 0;
+}
+
+/* line 14, ../scss/_character-select.scss */
+.character:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+/* line 20, ../scss/_character-select.scss */
+.character-name {
+  font-family: 'Felipa', cursive;
+  font-size: 20px;
+  letter-spacing: 2px;
+  z-index: 2;
+}
+
+/* line 27, ../scss/_character-select.scss */
+.character::first-letter {
+  font-family: 'Alex Brush', cursive;
+  font-size: 40px;
+  font-weight: 900;
+  float: left;
+  margin-right: 2px;
+  margin-top: -10px;
+}
+
+/* line 36, ../scss/_character-select.scss */
+.character ul {
+  display: inline-block;
+  font-family: 'Muli', sans-serif;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 300px;
+  margin-left: -20px;
+  z-index: 2;
+  vertical-align: middle;
+}
+
+/* line 48, ../scss/_character-select.scss */
+.character li {
+  display: inline-block;
+  background-color: #e4dddc;
+  padding: 3px 7px;
+  margin: 1px;
+  border-radius: 5px;
+  max-width: 250px;
+  z-index: 2;
+  border: 2px solid #aaaaaa;
+}
+
+/* line 59, ../scss/_character-select.scss */
+.character-select {
+  overflow: scroll;
+  height: 100%;
+}
+
+/* line 64, ../scss/_character-select.scss */
+#chara-select {
+  padding-bottom: 100px;
+  overflow: scroll;
+}
+
+/* line 69, ../scss/_character-select.scss */
+#chara-select button {
+  z-index: 1;
+}
+
+/* line 73, ../scss/_character-select.scss */
+.character .stripe {
+  width: 350px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 20px;
+  border-right: 2px solid white;
+  border-left: 2px solid white;
+  z-index: -1;
+}
+
+/* line 84, ../scss/_character-select.scss */
+.character .whitestripe {
+  z-index: -1;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 16px;
+  top: 14px;
+  left: 0;
+}
+
+/* line 1, ../scss/_chara-colors.scss */
+.template {
+  display: none;
+}
+
+/* line 7, ../scss/_chara-colors.scss */
+.aditi b, .aditi strong, .aditi i {
+  color: #732a25;
+}
+
+/* line 11, ../scss/_chara-colors.scss */
+.aditi .stripe {
+  background-color: #732a25;
+}
+
+/* line 17, ../scss/_chara-colors.scss */
+.alvar b, .alvar strong, .alvar i {
+  color: #6748a8;
+}
+
+/* line 21, ../scss/_chara-colors.scss */
+.alvar .stripe {
+  background-color: #6748a8;
+}
+
+/* line 27, ../scss/_chara-colors.scss */
+.ananta b, .ananta strong, .ananta i {
+  color: #a3d6a3;
+}
+
+/* line 32, ../scss/_chara-colors.scss */
+.ananta .stripe {
+  background-color: #a3d6a3;
+}
+
+/* line 38, ../scss/_chara-colors.scss */
+.aslan b, .aslan strong, .aslan i {
+  color: #6e1287;
+}
+
+/* line 42, ../scss/_chara-colors.scss */
+.aslan .stripe {
+  background-color: #6e1287;
+}
+
+/* line 48, ../scss/_chara-colors.scss */
+.aste b, .aste strong, .aste i {
+  color: #5883ad;
+}
+
+/* line 52, ../scss/_chara-colors.scss */
+.aste .stripe {
+  background-color: #5883ad;
+}
+
+/* line 58, ../scss/_chara-colors.scss */
+.deryn b, .deryn strong, .deryn i {
+  color: #cadcde;
+}
+
+/* line 63, ../scss/_chara-colors.scss */
+.deryn .stripe {
+  background-color: #cadcde;
+}
+
+/* line 69, ../scss/_chara-colors.scss */
+.erinys b, .erinys strong, .erinys i {
+  color: #9a79a6;
+}
+
+/* line 73, ../scss/_chara-colors.scss */
+.erinys .stripe {
+  background-color: #9a79a6;
+}
+
+/* line 79, ../scss/_chara-colors.scss */
+.felix b, .felix strong, .felix i {
+  color: #326e40;
+}
+
+/* line 83, ../scss/_chara-colors.scss */
+.felix .stripe {
+  background-color: #326e40;
+}
+
+/* line 89, ../scss/_chara-colors.scss */
+.hashur b, .hashur strong, .hashur i {
+  color: #dbd088;
+}
+
+/* line 94, ../scss/_chara-colors.scss */
+.hashur .stripe {
+  background-color: #dbd088;
+}
+
+/* line 100, ../scss/_chara-colors.scss */
+.jayashri b, .jayashri strong, .jayashri i {
+  color: #3d1e1a;
+}
+
+/* line 104, ../scss/_chara-colors.scss */
+.jayashri .stripe {
+  background-color: #3d1e1a;
+}
+
+/* line 110, ../scss/_chara-colors.scss */
+.kiran b, .kiran strong, .kiran i {
+  color: #c35617;
+}
+
+/* line 114, ../scss/_chara-colors.scss */
+.kiran .stripe {
+  background-color: #c35617;
+}
+
+/* line 120, ../scss/_chara-colors.scss */
+.kuliana b, .kuliana strong, .kuliana i {
+  color: #6b442a;
+}
+
+/* line 124, ../scss/_chara-colors.scss */
+.kuliana .stripe {
+  background-color: #6b442a;
+}
+
+/* line 130, ../scss/_chara-colors.scss */
+.lilim b, .lilim strong, .lilim i {
+  color: #bf5cb9;
+}
+
+/* line 134, ../scss/_chara-colors.scss */
+.lilim .stripe {
+  background-color: #bf5cb9;
+}
+
+/* line 140, ../scss/_chara-colors.scss */
+.machlah b, .machlah strong, .machlah i {
+  color: #bf9731;
+}
+
+/* line 144, ../scss/_chara-colors.scss */
+.machlah .stripe {
+  background-color: #bf9731;
+}
+
+/* line 150, ../scss/_chara-colors.scss */
+.martina b, .martina strong, .martina i {
+  color: #4762ad;
+}
+
+/* line 154, ../scss/_chara-colors.scss */
+.martina .stripe {
+  background-color: #4762ad;
+}
+
+/* line 160, ../scss/_chara-colors.scss */
+.reuben b, .reuben strong, .reuben i {
+  color: #ad6d18;
+}
+
+/* line 164, ../scss/_chara-colors.scss */
+.reuben .stripe {
+  background-color: #ad6d18;
+}
+
+/* line 170, ../scss/_chara-colors.scss */
+.shae b, .shae strong, .shae i {
+  color: #993629;
+}
+
+/* line 174, ../scss/_chara-colors.scss */
+.shae .stripe {
+  background-color: #993629;
+}
+
+/* line 180, ../scss/_chara-colors.scss */
+.sheona b, .sheona strong, .sheona i {
+  color: #0d345b;
+}
+
+/* line 184, ../scss/_chara-colors.scss */
+.sheona .stripe {
+  background-color: #0d345b;
+}
+
+/* line 190, ../scss/_chara-colors.scss */
+.siorus b, .siorus strong, .siorus i {
+  color: #ba6156;
+}
+
+/* line 194, ../scss/_chara-colors.scss */
+.siorus .stripe {
+  background-color: #ba6156;
+}
+
+/* line 200, ../scss/_chara-colors.scss */
+.skane b, .skane strong, .skane i {
+  color: #732f3b;
+}
+
+/* line 204, ../scss/_chara-colors.scss */
+.skane .stripe {
+  background-color: #732f3b;
+}
+
+/* line 210, ../scss/_chara-colors.scss */
+.taiji b, .taiji strong, .taiji i {
+  color: #1d98a8;
+}
+
+/* line 214, ../scss/_chara-colors.scss */
+.taiji .stripe {
+  background-color: #1d98a8;
+}
+
+/* line 220, ../scss/_chara-colors.scss */
+.thanh b, .thanh strong, .thanh i {
+  color: #3843ba;
+}
+
+/* line 224, ../scss/_chara-colors.scss */
+.thanh .stripe {
+  background-color: #3843ba;
+}
+
+/* line 230, ../scss/_chara-colors.scss */
+.xiphos b, .xiphos strong, .xiphos i {
+  color: #6eeab3;
+}
+
+/* line 235, ../scss/_chara-colors.scss */
+.xiphos.character::first-letter {
+  padding-left: 6px;
+}
+
+/* line 239, ../scss/_chara-colors.scss */
+.xiphos .stripe {
+  background-color: #6eeab3;
+}
+
+/* line 245, ../scss/_chara-colors.scss */
+.yeoncho b, .yeoncho strong, .yeoncho i {
+  color: #9b397a;
+}
+
+/* line 249, ../scss/_chara-colors.scss */
+.yeoncho .stripe {
+  background-color: #9b397a;
+}
+
+/* line 255, ../scss/_chara-colors.scss */
+.yeonjun b, .yeonjun strong, .yeonjun i {
+  color: #367875;
+}
+
+/* line 259, ../scss/_chara-colors.scss */
+.yeonjun .stripe {
+  background-color: #367875;
+}
+
+/* line 265, ../scss/_chara-colors.scss */
+.riley b, .riley strong, .riley i {
+  color: #5f773e;
+}
+
+/* line 269, ../scss/_chara-colors.scss */
+.riley .stripe {
+  background-color: #5f773e;
+}
+
+/* line 275, ../scss/_chara-colors.scss */
+.adalia b, .adalia strong, .adalia i {
+  color: black;
+}
+
+/* line 279, ../scss/_chara-colors.scss */
+.adalia .stripe {
+  background-color: black;
+}
+
+/* line 285, ../scss/_chara-colors.scss */
+.aed b, .aed strong, .aed i {
+  color: black;
+}
+
+/* line 289, ../scss/_chara-colors.scss */
+.aed .stripe {
+  background-color: black;
+}
+
+/* line 295, ../scss/_chara-colors.scss */
+.alex b, .alex strong, .alex i {
+  color: black;
+}
+
+/* line 299, ../scss/_chara-colors.scss */
+.alex .stripe {
+  background-color: black;
+}
+
+/* line 305, ../scss/_chara-colors.scss */
+.artavus b, .artavus strong, .artavus i {
+  color: black;
+}
+
+/* line 309, ../scss/_chara-colors.scss */
+.artavus .stripe {
+  background-color: black;
+}
+
+/* line 315, ../scss/_chara-colors.scss */
+.asher b, .asher strong, .asher i {
+  color: black;
+}
+
+/* line 319, ../scss/_chara-colors.scss */
+.asher .stripe {
+  background-color: black;
+}
+
+/* line 325, ../scss/_chara-colors.scss */
+.august b, .august strong, .august i {
+  color: black;
+}
+
+/* line 329, ../scss/_chara-colors.scss */
+.august .stripe {
+  background-color: black;
+}
+
+/* line 335, ../scss/_chara-colors.scss */
+.bast b, .bast strong, .bast i {
+  color: black;
+}
+
+/* line 339, ../scss/_chara-colors.scss */
+.bast .stripe {
+  background-color: black;
+}
+
+/* line 345, ../scss/_chara-colors.scss */
+.moroi b, .moroi strong, .moroi i {
+  color: black;
+}
+
+/* line 349, ../scss/_chara-colors.scss */
+.moroi .stripe {
+  background-color: black;
+}
+
+/* line 355, ../scss/_chara-colors.scss */
+.ekat b, .ekat strong, .ekat i {
+  color: black;
+}
+
+/* line 359, ../scss/_chara-colors.scss */
+.ekat .stripe {
+  background-color: black;
+}
+
+/* line 365, ../scss/_chara-colors.scss */
+.elias b, .elias strong, .elias i {
+  color: black;
+}
+
+/* line 369, ../scss/_chara-colors.scss */
+.elias .stripe {
+  background-color: black;
+}
+
+/* line 375, ../scss/_chara-colors.scss */
+.erish b, .erish strong, .erish i {
+  color: black;
+}
+
+/* line 379, ../scss/_chara-colors.scss */
+.erish .stripe {
+  background-color: black;
+}
+
+/* line 385, ../scss/_chara-colors.scss */
+.freya b, .freya strong, .freya i {
+  color: black;
+}
+
+/* line 389, ../scss/_chara-colors.scss */
+.freya .stripe {
+  background-color: black;
+}
+
+/* line 395, ../scss/_chara-colors.scss */
+.ines b, .ines strong, .ines i {
+  color: black;
+}
+
+/* line 399, ../scss/_chara-colors.scss */
+.ines .stripe {
+  background-color: black;
+}
+
+/* line 405, ../scss/_chara-colors.scss */
+.kalis b, .kalis strong, .kalis i {
+  color: black;
+}
+
+/* line 409, ../scss/_chara-colors.scss */
+.kalis .stripe {
+  background-color: black;
+}
+
+/* line 415, ../scss/_chara-colors.scss */
+.leo b, .leo strong, .leo i {
+  color: black;
+}
+
+/* line 419, ../scss/_chara-colors.scss */
+.leo .stripe {
+  background-color: black;
+}
+
+/* line 425, ../scss/_chara-colors.scss */
+.maks b, .maks strong, .maks i {
+  color: black;
+}
+
+/* line 429, ../scss/_chara-colors.scss */
+.maks .stripe {
+  background-color: black;
+}
+
+/* line 435, ../scss/_chara-colors.scss */
+.nico b, .nico strong, .nico i {
+  color: black;
+}
+
+/* line 439, ../scss/_chara-colors.scss */
+.nico .stripe {
+  background-color: black;
+}
+
+/* line 445, ../scss/_chara-colors.scss */
+.noah b, .noah strong, .noah i {
+  color: black;
+}
+
+/* line 449, ../scss/_chara-colors.scss */
+.noah .stripe {
+  background-color: black;
+}
+
+/* line 455, ../scss/_chara-colors.scss */
+.olivia b, .olivia strong, .olivia i {
+  color: black;
+}
+
+/* line 459, ../scss/_chara-colors.scss */
+.olivia .stripe {
+  background-color: black;
+}
+
+/* line 465, ../scss/_chara-colors.scss */
+.simon b, .simon strong, .simon i {
+  color: black;
+}
+
+/* line 469, ../scss/_chara-colors.scss */
+.simon .stripe {
+  background-color: black;
+}
+
+/* line 475, ../scss/_chara-colors.scss */
+.toby b, .toby strong, .toby i {
+  color: black;
+}
+
+/* line 479, ../scss/_chara-colors.scss */
+.toby .stripe {
+  background-color: black;
+}
+
+/* line 485, ../scss/_chara-colors.scss */
+.oz b, .oz strong, .oz i {
+  color: black;
+}
+
+/* line 489, ../scss/_chara-colors.scss */
+.oz .stripe {
+  background-color: black;
+}
+
+/* line 495, ../scss/_chara-colors.scss */
+.flynn b, .flynn strong, .flynn i {
+  color: black;
+}
+
+/* line 499, ../scss/_chara-colors.scss */
+.flynn .stripe {
+  background-color: black;
+}
+
+/* line 505, ../scss/_chara-colors.scss */
+.jude b, .jude strong, .jude i {
+  color: black;
+}
+
+/* line 509, ../scss/_chara-colors.scss */
+.jude .stripe {
+  background-color: black;
+}
+
+/* line 515, ../scss/_chara-colors.scss */
+.azza b, .azza strong, .azza i {
+  color: black;
+}
+
+/* line 519, ../scss/_chara-colors.scss */
+.azza .stripe {
+  background-color: black;
+}
+
+/* line 525, ../scss/_chara-colors.scss */
+.evren b, .evren strong, .evren i {
+  color: #5040b1;
+}
+
+/* line 529, ../scss/_chara-colors.scss */
+.evren .stripe {
+  background-color: #5040b1;
+}
+
+/* line 535, ../scss/_chara-colors.scss */
+.israa b, .israa strong, .israa i {
+  color: black;
+}
+
+/* line 539, ../scss/_chara-colors.scss */
+.israa .stripe {
+  background-color: black;
+}
+
+/* line 545, ../scss/_chara-colors.scss */
+.thren b, .thren strong, .thren i {
+  color: black;
+}
+
+/* line 549, ../scss/_chara-colors.scss */
+.thren .stripe {
+  background-color: black;
+}
+
+/* line 555, ../scss/_chara-colors.scss */
+.gresh b, .gresh strong, .gresh i {
+  color: black;
+}
+
+/* line 559, ../scss/_chara-colors.scss */
+.gresh .stripe {
+  background-color: black;
+}
+
+/* line 565, ../scss/_chara-colors.scss */
+.calanthe b, .calanthe strong, .calanthe i {
+  color: #de87ba;
+}
+
+/* line 569, ../scss/_chara-colors.scss */
+.calanthe .stripe {
+  background-color: #de87ba;
+}
+
+/* line 575, ../scss/_chara-colors.scss */
+.levent b, .levent strong, .levent i {
+  color: #24ad95;
+}
+
+/* line 579, ../scss/_chara-colors.scss */
+.levent .stripe {
+  background-color: #24ad95;
+}
+
+/* line 585, ../scss/_chara-colors.scss */
+.orhan b, .orhan strong, .orhan i {
+  color: #3c47c1;
+}
+
+/* line 589, ../scss/_chara-colors.scss */
+.orhan .stripe {
+  background-color: #3c47c1;
+}
+
+/* line 595, ../scss/_chara-colors.scss */
+.nereus b, .nereus strong, .nereus i {
+  color: #377a82;
+}
+
+/* line 599, ../scss/_chara-colors.scss */
+.nereus .stripe {
+  background-color: #377a82;
+}
+
+/* line 605, ../scss/_chara-colors.scss */
+.nou b, .nou strong, .nou i {
+  color: #a81963;
+}
+
+/* line 609, ../scss/_chara-colors.scss */
+.nou .stripe {
+  background-color: #a81963;
+}
+
+/* line 3, ../scss/_profile.scss */
+.character-header {
+  font-size: 50px;
+  font-family: 'Alex Brush', cursive;
+  letter-spacing: 2px;
+  position: fixed;
+  top: 20px;
+  margin-left: 77px;
+  margin-right: 460px;
+  cursor: default;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 15, ../scss/_profile.scss */
+.character-header::first-letter {
+  font-size: 90px;
+  font-weight: 900;
+  float: left;
+  margin-right: -2px;
+  margin-top: -20px;
+}
+
+/* line 23, ../scss/_profile.scss */
+.tab-stripe {
+  background: red;
+  height: 100px;
+  width: 100%;
+  z-index: -999;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -20px;
+  position: fixed;
+  border: 2px solid white;
+  -ms-transform: rotate(-40deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-40deg);
+  /* Safari */
+  transform: rotate(-40deg);
+}
+
+/* line 38, ../scss/_profile.scss */
+.info {
+  text-align: left;
+  list-style: none;
+  display: inline-block;
+  float: left;
+  width: 45%;
+  font-family: 'Muli', sans-serif;
+}
+
+/* line 47, ../scss/_profile.scss */
+.info li {
+  border-top: 2px solid white;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 15px;
+  margin: 5px;
+  width: 95%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+/* line 59, ../scss/_profile.scss */
+.info button {
+  background: transparent;
+  border: 0;
+  color: #666666;
+  font-size: 15px;
+  font-family: 'Muli', sans-serif;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  border-bottom: 2px solid white;
+}
+
+/* line 71, ../scss/_profile.scss */
+.info hr {
+  margin-top: 1px;
+  background-color: white;
+  border: none;
+  position: absolute;
+  height: 2px;
+  margin-top: 5px;
+  z-index: -1;
+}
+
+/* line 81, ../scss/_profile.scss */
+.info b {
+  font-size: 20px;
+  float: left;
+  padding-right: 50px;
+}
+
+/* line 87, ../scss/_profile.scss */
+.tag-block ul {
+  display: inline-block;
+  font-family: 'Muli', sans-serif;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
+  margin-top: -8px;
+  z-index: 2;
+  text-align: center;
+  cursor: default;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 101, ../scss/_profile.scss */
+.tag-block li {
+  display: inline-block;
+  background-color: #e4dddc;
+  padding: 3px 7px;
+  margin: 1px;
+  border-radius: 5px;
+  z-index: 2;
+  border: 2px solid white;
+}
+
+/* line 111, ../scss/_profile.scss */
+.tag-block hr {
+  background-color: white;
+  border-radius: 40px;
+  border: none;
+  height: 2px;
+}
+
+/* line 118, ../scss/_profile.scss */
+.tag-block i {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+/* line 123, ../scss/_profile.scss */
+.intro {
+  float: right;
+  right: 0;
+  right: 100px;
+  font-family: 'Alex Brush', cursive;
+  letter-spacing: 2px;
+  font-size: 50px;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: absolute;
+  cursor: default;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 137, ../scss/_profile.scss */
+.intro-blurb {
+  float: right;
+  width: 45%;
+  margin-top: 50px;
+  font-size: 15px;
+  font-family: 'Muli', sans-serif;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+/* line 148, ../scss/_profile.scss */
+.info .stripe {
+  height: 10px;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+  color: transparent;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 50px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 162, ../scss/_profile.scss */
+.biography {
+  padding: 0 50px;
+}
+
+/* line 166, ../scss/_profile.scss */
+.biography-category {
+  border-top: 2px solid white;
+  border-radius: 5px;
+  padding: 0 50px;
+  padding-bottom: 25px;
+  margin-top: 15px;
+}
+
+/* line 174, ../scss/_profile.scss */
+.biography p {
+  text-indent: 20px;
+  margin-top: 0;
+  font-family: 'Muli', sans-serif;
+  line-height: 25px;
+}
+
+/* line 181, ../scss/_profile.scss */
+.bio-header {
+  font-size: 50px;
+  font-family: 'Alex Brush', cursive;
+  margin-top: -30px;
+  padding-left: 50px;
+  float: left;
+  cursor: default;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 191, ../scss/_profile.scss */
+.relationships {
+  text-align: center;
+}
+
+/* line 195, ../scss/_profile.scss */
+.relationship {
+  display: inline-block;
+  padding: 25px;
+  width: 500px;
+  margin: auto;
+  min-height: 275px;
+  vertical-align: middle;
+}
+
+/* line 204, ../scss/_profile.scss */
+.relationship p {
+  text-align: justify;
+  margin-top: 0;
+  line-height: 22px;
+  padding-left: 60px;
+  font-family: 'Muli', sans-serif;
+  width: 375px;
+}
+
+/* line 213, ../scss/_profile.scss */
+.relationship strong {
+  text-align: left;
+}
+
+/* line 217, ../scss/_profile.scss */
+.relationship .relation-name {
+  font-size: 35px;
+  font-family: 'Alex Brush', cursive;
+  margin-left: -220px;
+  margin-top: 25px;
+  margin-bottom: -20px;
+  z-index: 99;
+}
+
+/* line 226, ../scss/_profile.scss */
+.relationship .relation-type {
+  width: 100%;
+  font-size: 25px;
+  font-family: 'Alex Brush', cursive;
+  margin-left: -250px;
+  margin-top: -20px;
+}
+
+/* line 234, ../scss/_profile.scss */
+.relationship .left {
+  width: 50px;
+  border: 2px solid white;
+  float: left;
+  height: 250px;
+  border-radius: 50px 5px 5px 50px;
+  z-index: 9;
+}
+
+/* line 243, ../scss/_profile.scss */
+.relationship .right {
+  width: 50px;
+  border: 2px solid white;
+  float: right;
+  height: 250px;
+  border-radius: 5px 50px 50px 5px;
+  z-index: 9;
+}
+
+/* line 252, ../scss/_profile.scss */
+#music-tab {
+  width: 20px;
+  display: inline-block;
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-transition: linear 0.5s;
+  -moz-transition: linear 0.5s;
+  -ms-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+
+/* line 261, ../scss/_profile.scss */
+#music {
+  display: inline-block;
+  margin-left: 20px;
+  position: fixed;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: linear 0.5s;
+  -moz-transition: linear 0.5s;
+  -ms-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+
+/* line 270, ../scss/_profile.scss */
+#player {
+  border: 5px solid white;
+  background: white;
+  border-radius: 5px;
+  top: 3px;
+  width: 40px;
+  height: 80px;
+  right: 500px;
+  position: fixed;
+  z-index: 99999;
+  -webkit-transition: linear 0.5s;
+  -moz-transition: linear 0.5s;
+  -ms-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+
+/* line 283, ../scss/_profile.scss */
+#music-label {
+  width: 20px;
+  top: 30px;
+  right: -5px;
+  color: black;
+  position: absolute;
+}
+
+/* line 291, ../scss/_profile.scss */
+.music-button-close, .music-button-open {
+  top: 30px;
+  left: 0;
+  position: absolute;
+}
+
+/* line 297, ../scss/_profile.scss */
+.music-button-close {
+  display: none;
+}
+
+/* line 301, ../scss/_profile.scss */
+.misc {
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 307, ../scss/_profile.scss */
+.misc ul {
+  text-align: left;
+  display: inline-block;
+  font-family: 'Muli', sans-serif;
+  border-top: 2px solid white;
+  border-radius: 5px;
+  padding-top: 23px;
+  margin: 0 50px;
+}
+
+/* line 317, ../scss/_profile.scss */
+.misc li {
+  margin: 5px 50px;
+}
+
+/* line 321, ../scss/_profile.scss */
+.tropes-block {
+  display: inline-block;
+  border-top: 2px solid white;
+  padding: 25px 0;
+  border-radius: 5px;
+  margin: 25px 50px;
+}
+
+/* line 329, ../scss/_profile.scss */
+.misc strong {
+  float: left;
+  position: absolute;
+  font-family: 'Alex Brush', cursive;
+  font-size: 35px;
+  margin-top: -45px;
+  cursor: default;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 339, ../scss/_profile.scss */
+.tropes-block a {
+  cursor: pointer;
+  color: #666666;
+  background: white;
+  padding: 1px 20px;
+  border-radius: 5px;
+  font-family: 'Muli', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 5px;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+
+/* line 352, ../scss/_profile.scss */
+.tropes-block a:hover {
+  color: #666666;
+  background: #efebea;
+  -webkit-transition: linear 0.3s;
+  -moz-transition: linear 0.3s;
+  -ms-transition: linear 0.3s;
+  -o-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+
+/* line 358, ../scss/_profile.scss */
+.pinterest {
+  border-top: 2px solid white;
+  margin: 0 50px;
+  border-radius: 5px;
+  padding-top: 25px;
+}
+
+/* line 365, ../scss/_profile.scss */
+.pinterest strong {
+  margin-left: 50px;
+  position: relative;
+}
+
+/* line 370, ../scss/_profile.scss */
+div.pinterest > span > span:first-child {
+  display: none !important;
+}
+
+/* line 374, ../scss/_profile.scss */
+.div.pinterest > span > span:last-child {
+  display: none;
+}
+
+/* line 378, ../scss/_profile.scss */
+div.pinterest > span {
+  box-shadow: 0 0 0 transparent !important;
+  background: transparent none !important;
+  padding: 0 !important;
+  margin: 0;
+}
+
+/* 
+::selection {
+	background: $accentcolor;
+}
+
+::-moz-selection {
+	background: $accentcolor;
+}
+
+::-webkit-selection {
+	background: $accentcolor;
+}
+*/
+/* line 15, ../scss/_general.scss */
+#s-m-t-tooltip {
+  max-width: 300px;
+  z-index: 10;
+  margin: 24px 14px 7px 12px;
+  padding: 8px;
+  background: #e4dddc;
+  font-size: 12px;
+  color: #666666;
+  font-family: 'Muli', sans-serif;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+/* line 29, ../scss/_general.scss */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+/* line 34, ../scss/_general.scss */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 50px;
+}
+
+/* line 39, ../scss/_general.scss */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* line 43, ../scss/_general.scss */
+body {
+  background: url("img/gplay.png");
+  background-color: #e4dddc;
+}
+
+/* line 48, ../scss/_general.scss */
+b {
+  font-family: 'Felipa', cursive;
+  font-size: 16px;
+  letter-spacing: 2px;
+  z-index: 2;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/* line 56, ../scss/_general.scss */
+strong {
+  text-shadow: -2px 1px white, -1px 2px white, 2px -1px white, 1px -2px white;
+}
+
+/* line 60, ../scss/_general.scss */
+#loading {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  background: url("http://i.giphy.com/xTk9ZvMnbIiIew7IpW.gif") 50% 50% no-repeat #e5eff1;
+  background-size: 350px;
+}
+
+/* line 71, ../scss/_general.scss */
+#profile-loading {
+  display: none;
+  position: fixed;
+  background-image: url("img/spin.gif");
+  z-index: 9999;
+  left: 40%;
+  top: 40%;
+  height: 100px;
+  width: 100px;
+}
+
+/* line 82, ../scss/_general.scss */
+h2 {
+  float: right;
+  margin-top: -28px;
+  margin-bottom: -30px;
+  font-size: 40px;
+  padding-left: 200px;
+  text-align: right;
+  font-family: 'Alex Brush', cursive;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/* line 93, ../scss/_general.scss */
+h3 {
+  display: inline-block;
+  margin: 0;
+  margin-right: 5px;
+  margin-left: -75px;
+  padding: 0;
+  padding-right: 10px;
+  border-right: 2px solid white;
+  font-size: 13pt;
+  font-family: 'Felipa', cursive;
+  width: 75px;
+  text-align: right;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/* line 108, ../scss/_general.scss */
+.test-button {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  background-color: red;
+  display: none;
+}
+
+/* line 116, ../scss/_general.scss */
+.ui-widget-content {
+  background: #e4dddc;
+  border: 2px solid white;
+  color: #666666;
+}
+
+/* line 122, ../scss/_general.scss */
+.ui-dialog .ui-dialog-titlebar {
+  background: transparent;
+  border: 0;
+}
+
+/* line 126, ../scss/_general.scss */
+.ui-dialog .ui-dialog-title {
+  font-family: 'Alex Brush', cursive;
+  font-size: 30px;
+  color: #666666;
+  border-bottom: 2px solid white;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/* line 133, ../scss/_general.scss */
+.ui-dialog .ui-dialog-titlebar-close {
+  top: 30%;
+  margin: -10px 0 0 0;
+  outline: none;
+  border: 0;
+  background: white;
+}
+
+/* line 140, ../scss/_general.scss */
+.ui-dialog .ui-dialog-content {
+  background: #e4dddc;
+  font-family: 'Muli', sans-serif;
+  font-size: 14px;
+  border: 0;
+}
+
+/* line 1, ../scss/_layout.scss */
+#left-side-bar {
+  height: 100%;
+  width: 50px;
+  background-color: #bbbbbb;
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 2px solid white;
+}
+
+/* line 12, ../scss/_layout.scss */
+#right-side-bar {
+  height: 100%;
+  width: 450px;
+  background-color: #bbbbbb;
+  float: left;
+  position: fixed;
+  right: 0;
+  top: 0;
+  border-left: 2px solid white;
+  -webkit-transition: linear 0.5s;
+  -moz-transition: linear 0.5s;
+  -ms-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+
+/* line 24, ../scss/_layout.scss */
+#right-bar-sorting-container {
+  background-color: #aaaaaa;
+  width: 100%;
+  height: 0;
+  position: fixed;
+  overflow-x: hidden;
+  z-index: 3;
+  top: 0;
+  -webkit-transition: linear 0.5s;
+  -moz-transition: linear 0.5s;
+  -ms-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+
+/* line 35, ../scss/_layout.scss */
+#right-bar-characters {
+  height: 100%;
+  -webkit-transition: linear 0.5s;
+  -moz-transition: linear 0.5s;
+  -ms-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+
+/* line 40, ../scss/_layout.scss */
+#slide-button {
+  background-color: #aaaaaa;
+  border-radius: 0 0 5px 5px;
+  height: 20px;
+  box-shadow: 0 0 0 2px white;
+  -webkit-transition: linear 0.5s;
+  -moz-transition: linear 0.5s;
+  -ms-transition: linear 0.5s;
+  -o-transition: linear 0.5s;
+  transition: linear 0.5s;
+}
+
+/* line 48, ../scss/_layout.scss */
+#slide-button span {
+  margin-left: 225px;
+  z-index: 9;
+}
+
+/* line 52, ../scss/_layout.scss */
+#slide-button i {
+  font-size: 25px;
+  margin-top: 5px;
+  color: white;
+  z-index: 9;
+}
+
+/* line 59, ../scss/_layout.scss */
+#triangle {
+  height: 0px;
+  width: 10px;
+  border: 20px solid #aaaaaa;
+  border-radius: 100%;
+  border-color: #aaaaaa transparent transparent transparent;
+  border-width: 29px 12px 0px 12px;
+  float: left;
+  margin-left: 216px;
+  margin-top: -17px;
+}
+
+/* line 71, ../scss/_layout.scss */
+.slide-button-close {
+  display: none;
+}
+
+/* line 75, ../scss/_layout.scss */
+.open-filters, .close-filters {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  color: white;
+}
+
+/* line 83, ../scss/_layout.scss */
+.close-filters {
+  display: none;
+}
+
+/* line 1, ../scss/_tabs.scss */
+.tabs {
+  float: none;
+  list-style: none;
+  text-align: left;
+}
+/* line 5, ../scss/_tabs.scss */
+.tabs li {
+  float: left;
+  display: block;
+}
+/* line 9, ../scss/_tabs.scss */
+.tabs input[type="radio"] {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+}
+/* line 14, ../scss/_tabs.scss */
+.tabs label {
+  display: block;
+  padding: 2px;
+  padding-right: 20px;
+  padding-left: 30px;
+  border-radius: 2px 2px 0 0;
+  font-size: 15px;
+  font-family: 'Muli', sans-serif;
+  background-color: #e4dddc;
+  cursor: pointer;
+  color: #666666;
+  border: 2px solid white;
+  border-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  margin-top: 80px;
+  margin-left: 15px;
+  outline: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+/* line 34, ../scss/_tabs.scss */
+.tabs label:hover {
+  background-color: white;
+}
+/* line 38, ../scss/_tabs.scss */
+.tabs .tab-content {
+  z-index: 2;
+  display: none;
+  overflow-x: scroll;
+  font-family: 'Muli', sans-serif;
+  font-size: 17px;
+  padding: 25px;
+  margin-left: 60px;
+  color: #666666;
+  margin-right: 460px;
+  border: 2px solid white;
+  background-color: #e4dddc;
+  border-radius: 5px;
+  top: 121px;
+  bottom: 10px;
+  position: fixed;
+  left: 0;
+}
+/* line 57, ../scss/_tabs.scss */
+.tabs [id^="tab"]:checked + label {
+  background-color: white;
+}
+/* line 60, ../scss/_tabs.scss */
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block;
+}

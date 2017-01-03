@@ -1,11 +1,13 @@
 
+
 .character-header {
   font-size: 50px;
   font-family: 'Alex Brush', cursive;
   letter-spacing: 2px;
   position: fixed;
   top: 20px;
-  margin-left: 25px;
+  margin-left: 77px;
+  margin-right: 460px;
   cursor: default;
   @include user-select(none)
 }
@@ -47,6 +49,7 @@
   border-radius: 5px;
   display: inline-block;
   padding: 5px 10px;
+  font-size: 15px;
   margin: 5px;
   width: 95%;
   text-align: right;
@@ -106,7 +109,6 @@
 }
 
 .tag-block hr {
-    margin-top: 1px;
     background-color: $bordercolor;
     border-radius: 40px;
     border: none;
